@@ -1,0 +1,1362 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Обновленная стратегия Мой дом онлайн 2026: план и факт, продажи и отвалы, исследование, SLA, экономика робота, пилот РЦ, KPI и ответы комитету.">
+<title>Стратегия МДО 2026 — повторная защита — v3</title>
+<style>html{scroll-behavior:smooth;background:#fffaf3}body{margin:0;min-width:320px;background:#fffaf3}a:focus-visible{outline:3px solid #ff5a14;outline-offset:4px}</style>
+</head>
+<body>
+<main id="mdo-strategy-site">
+  <style>
+    #mdo-strategy-site {
+      --ink: #2d2926;
+      --muted-ink: #746b64;
+      --paper: #f7f0e6;
+      --paper-2: #fffaf3;
+      --peach: #f8d7c5;
+      --peach-2: #f3b99b;
+      --orange: #ff5a14;
+      --orange-deep: #dc4408;
+      --sage: #9eb49b;
+      --dark: #2b2929;
+      --line: rgba(45, 41, 38, 0.14);
+      --shadow: 0 22px 60px rgba(91, 61, 43, 0.10);
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 92% 5%, rgba(255, 90, 20, 0.13), transparent 23rem),
+        linear-gradient(180deg, var(--paper-2), var(--paper));
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      overflow: clip;
+      scroll-behavior: smooth;
+    }
+
+    #mdo-strategy-site * { box-sizing: border-box; }
+    #mdo-strategy-site a { color: inherit; }
+    #mdo-strategy-site button, #mdo-strategy-site a { font: inherit; }
+
+    #mdo-strategy-site .progress-shell {
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 20;
+      height: 5px;
+      background: rgba(247, 240, 230, 0.82);
+      backdrop-filter: blur(12px);
+    }
+
+    #mdo-strategy-site .progress-value {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--orange), var(--peach-2));
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+
+    #mdo-strategy-site .shell {
+      width: min(1180px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    #mdo-strategy-site .section {
+      position: relative;
+      padding-block: clamp(72px, 10vw, 144px);
+      border-block-end: 1px solid var(--line);
+    }
+
+    #mdo-strategy-site .section:last-child { border-block-end: 0; }
+
+    #mdo-strategy-site .eyebrow {
+      margin: 0 0 18px;
+      color: var(--orange-deep);
+      font-size: 0.77rem;
+      font-weight: 500;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    #mdo-strategy-site h1,
+    #mdo-strategy-site h2,
+    #mdo-strategy-site h3,
+    #mdo-strategy-site p { margin-block-start: 0; }
+
+    #mdo-strategy-site h1 {
+      max-width: 850px;
+      margin-block-end: 24px;
+      font-size: clamp(3rem, 7vw, 6.8rem);
+      font-weight: 500;
+      letter-spacing: -0.055em;
+      line-height: 0.95;
+    }
+
+    #mdo-strategy-site h2 {
+      max-width: 880px;
+      margin-block-end: 24px;
+      font-size: clamp(2.1rem, 4.5vw, 4.5rem);
+      font-weight: 500;
+      letter-spacing: -0.045em;
+      line-height: 1;
+    }
+
+    #mdo-strategy-site h3 {
+      margin-block-end: 12px;
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    #mdo-strategy-site .lead {
+      max-width: 740px;
+      margin-block-end: 34px;
+      color: var(--muted-ink);
+      font-size: clamp(1.08rem, 2vw, 1.45rem);
+      line-height: 1.55;
+    }
+
+    #mdo-strategy-site .hero {
+      padding-block-start: clamp(80px, 12vw, 160px);
+    }
+
+    #mdo-strategy-site .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+      gap: clamp(40px, 8vw, 100px);
+      align-items: center;
+    }
+
+    #mdo-strategy-site .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    #mdo-strategy-site .action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 20px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 250, 243, 0.72);
+      text-decoration: none;
+      transition: transform 180ms ease, background 180ms ease;
+    }
+
+    #mdo-strategy-site .action.primary {
+      border-color: var(--orange);
+      color: #fff;
+      background: var(--orange);
+    }
+
+    #mdo-strategy-site .action:hover { transform: translateY(-2px); }
+
+    #mdo-strategy-site .orbit {
+      position: relative;
+      aspect-ratio: 1;
+      min-height: 390px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle, var(--paper-2) 0 22%, transparent 23%),
+        radial-gradient(circle, transparent 0 48%, rgba(255, 90, 20, 0.16) 49% 49.7%, transparent 50.5%),
+        linear-gradient(145deg, var(--peach), rgba(255, 250, 243, 0.25));
+      box-shadow: var(--shadow);
+    }
+
+    #mdo-strategy-site .orbit-center {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      width: 42%;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--dark);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-weight: 500;
+      box-shadow: 0 16px 36px rgba(43, 41, 41, 0.22);
+    }
+
+    #mdo-strategy-site .orbit-node {
+      position: absolute;
+      width: 112px;
+      min-height: 58px;
+      display: grid;
+      place-items: center;
+      padding: 10px;
+      border: 1px solid rgba(45, 41, 38, 0.1);
+      border-radius: 20px;
+      background: rgba(255, 250, 243, 0.92);
+      box-shadow: 0 12px 28px rgba(91, 61, 43, 0.09);
+      text-align: center;
+      font-size: 0.86rem;
+      font-weight: 500;
+    }
+
+    #mdo-strategy-site .orbit-node:nth-of-type(2) { inset: 6% auto auto 50%; transform: translateX(-50%); }
+    #mdo-strategy-site .orbit-node:nth-of-type(3) { inset: 43% 1% auto auto; }
+    #mdo-strategy-site .orbit-node:nth-of-type(4) { inset: auto auto 5% 50%; transform: translateX(-50%); }
+    #mdo-strategy-site .orbit-node:nth-of-type(5) { inset: 43% auto auto 1%; }
+
+    #mdo-strategy-site .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 36px;
+      align-items: end;
+      margin-block-end: 44px;
+    }
+
+    #mdo-strategy-site .section-head .lead { margin-block-end: 0; }
+
+    #mdo-strategy-site .steps,
+    #mdo-strategy-site .metrics,
+    #mdo-strategy-site .research-grid,
+    #mdo-strategy-site .findings,
+    #mdo-strategy-site .priority-list,
+    #mdo-strategy-site .economy-grid,
+    #mdo-strategy-site .tariffs,
+    #mdo-strategy-site .strategy-grid,
+    #mdo-strategy-site .kpis,
+    #mdo-strategy-site .answers {
+      display: grid;
+      gap: 18px;
+    }
+
+    #mdo-strategy-site .steps { grid-template-columns: repeat(4, 1fr); }
+    #mdo-strategy-site .metrics { grid-template-columns: repeat(3, 1fr); }
+    #mdo-strategy-site .research-grid { grid-template-columns: 1.05fr 0.95fr; }
+    #mdo-strategy-site .findings { grid-template-columns: repeat(3, 1fr); }
+    #mdo-strategy-site .economy-grid { grid-template-columns: 1fr 1fr; }
+    #mdo-strategy-site .tariffs { grid-template-columns: repeat(3, 1fr); }
+    #mdo-strategy-site .strategy-grid { grid-template-columns: repeat(2, 1fr); }
+    #mdo-strategy-site .kpis { grid-template-columns: repeat(4, 1fr); }
+    #mdo-strategy-site .answers { grid-template-columns: repeat(2, 1fr); }
+
+    #mdo-strategy-site .answer-list { display: grid; gap: 0; margin: 0; }
+    #mdo-strategy-site .answer-row {
+      display: grid;
+      grid-template-columns: minmax(150px, 0.78fr) minmax(0, 1.22fr);
+      gap: 22px;
+      padding-block: 20px;
+      border-block-start: 1px solid var(--line);
+    }
+    #mdo-strategy-site .answer-row:first-child { border-block-start: 0; padding-block-start: 0; }
+    #mdo-strategy-site .answer-row:last-child { padding-block-end: 0; }
+    #mdo-strategy-site .answer-row dt { font-weight: 650; line-height: 1.3; }
+    #mdo-strategy-site .answer-row dd { margin: 0; color: var(--muted-ink); line-height: 1.55; }
+    #mdo-strategy-site .dark .answer-row { border-color: rgba(255, 255, 255, 0.17); }
+    #mdo-strategy-site .dark .answer-row dt { color: #fff; }
+    #mdo-strategy-site .dark .answer-row dd { color: rgba(255, 255, 255, 0.88); }
+
+    #mdo-strategy-site .asked-by {
+      display: block;
+      margin-block-start: 7px;
+      color: var(--orange-deep);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.035em;
+    }
+    #mdo-strategy-site .dark .asked-by { color: #ffc1a5; }
+
+    #mdo-strategy-site .fact-note {
+      margin-block-start: 18px;
+      padding: 18px 22px;
+      border-inline-start: 4px solid var(--orange);
+      border-radius: 0 18px 18px 0;
+      background: rgba(248, 215, 197, 0.48);
+      color: var(--muted-ink);
+      line-height: 1.55;
+    }
+
+    #mdo-strategy-site .bsc-flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      margin-block: 34px 22px;
+    }
+
+    #mdo-strategy-site .bsc-node {
+      position: relative;
+      display: grid;
+      min-height: 94px;
+      place-items: center;
+      padding: 18px 14px;
+      border: 1px solid rgba(45, 41, 38, 0.08);
+      border-radius: 22px;
+      background: rgba(255, 250, 243, 0.76);
+      text-align: center;
+      font-weight: 650;
+      line-height: 1.25;
+      box-shadow: 0 12px 34px rgba(91, 61, 43, 0.05);
+    }
+
+    #mdo-strategy-site .bsc-node:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      inset: 50% -14px auto auto;
+      z-index: 2;
+      color: var(--orange);
+      transform: translate(50%, -50%);
+      font-size: 1.05rem;
+    }
+
+    #mdo-strategy-site .bsc-node:first-child,
+    #mdo-strategy-site .bsc-node:last-child { background: rgba(248, 215, 197, 0.72); }
+
+    #mdo-strategy-site .bsc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    #mdo-strategy-site .bsc-module:last-child { grid-column: 1 / -1; }
+
+    #mdo-strategy-site .bsc-module-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-block-end: 8px;
+    }
+
+    #mdo-strategy-site .bsc-module-index {
+      color: var(--orange);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    #mdo-strategy-site .bsc-metrics { display: grid; }
+
+    #mdo-strategy-site .bsc-metric {
+      display: grid;
+      grid-template-columns: 112px minmax(0, 1fr);
+      gap: 14px;
+      padding-block: 17px;
+      border-block-start: 1px solid var(--line);
+    }
+
+    #mdo-strategy-site .bsc-metric:first-child { border-block-start: 0; }
+
+    #mdo-strategy-site .status-chip {
+      align-self: start;
+      justify-self: start;
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: #24603f;
+      background: #dff1e6;
+      font-size: 0.7rem;
+      font-weight: 750;
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    #mdo-strategy-site .status-chip.building {
+      color: #8a3c19;
+      background: rgba(248, 215, 197, 0.85);
+    }
+
+    #mdo-strategy-site .bsc-metric h4 {
+      margin: 0 0 6px;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+
+    #mdo-strategy-site .bsc-metric p {
+      margin: 0;
+      color: var(--muted-ink);
+      font-size: 0.86rem;
+      line-height: 1.48;
+    }
+
+    #mdo-strategy-site .metric-owner {
+      display: block;
+      margin-block-start: 7px;
+      color: var(--ink);
+      font-size: 0.74rem;
+      font-weight: 650;
+    }
+
+    #mdo-strategy-site .bsc-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-block-start: 20px;
+    }
+
+    #mdo-strategy-site .bsc-link {
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--orange-deep);
+      background: rgba(255, 250, 243, 0.72);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    #mdo-strategy-site .bsc-link:hover { transform: translateY(-1px); }
+
+    #mdo-strategy-site .panel {
+      position: relative;
+      padding: clamp(24px, 3vw, 38px);
+      border: 1px solid rgba(45, 41, 38, 0.08);
+      border-radius: 28px;
+      background: rgba(255, 250, 243, 0.78);
+      box-shadow: 0 14px 42px rgba(91, 61, 43, 0.06);
+    }
+
+    #mdo-strategy-site .panel.dark {
+      color: #fff;
+      background: var(--dark);
+    }
+
+    #mdo-strategy-site .panel.peach { background: rgba(248, 215, 197, 0.72); }
+    #mdo-strategy-site .panel.orange { color: #fff; background: var(--orange); }
+    #mdo-strategy-site .panel.orange .metric-value { color: #fff; }
+
+    #mdo-strategy-site .step-number {
+      display: inline-grid;
+      width: 36px;
+      aspect-ratio: 1;
+      place-items: center;
+      margin-block-end: 32px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--orange);
+      font-size: 0.86rem;
+      font-weight: 500;
+    }
+
+    #mdo-strategy-site .panel p:last-child { margin-block-end: 0; }
+    #mdo-strategy-site .muted { color: var(--muted-ink); }
+    #mdo-strategy-site .dark .muted, #mdo-strategy-site .orange .muted { color: rgba(255, 255, 255, 0.68); }
+
+    #mdo-strategy-site .metric-value {
+      margin-block-end: 8px;
+      color: var(--orange);
+      font-size: clamp(2.6rem, 5vw, 5rem);
+      font-weight: 500;
+      letter-spacing: -0.055em;
+      line-height: 0.95;
+    }
+
+    #mdo-strategy-site .metric-label { color: var(--muted-ink); line-height: 1.45; }
+
+    #mdo-strategy-site .finance-chart {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      align-items: end;
+      min-height: 300px;
+      padding-block-start: 34px;
+    }
+
+    #mdo-strategy-site .finance-column {
+      display: grid;
+      grid-template-rows: 1fr auto auto;
+      gap: 10px;
+      height: 260px;
+      align-items: end;
+      text-align: center;
+    }
+
+    #mdo-strategy-site .finance-bar {
+      width: min(80px, 72%);
+      height: var(--bar-height);
+      margin-inline: auto;
+      border-radius: 18px 18px 6px 6px;
+      background: linear-gradient(180deg, var(--peach-2), var(--orange));
+      transform: scaleY(0.06);
+      transform-origin: bottom;
+      transition: transform 900ms cubic-bezier(.22,.8,.25,1);
+    }
+
+    #mdo-strategy-site .is-visible .finance-bar { transform: scaleY(1); }
+    #mdo-strategy-site .finance-value { font-weight: 500; }
+    #mdo-strategy-site .finance-year { color: var(--muted-ink); }
+
+    #mdo-strategy-site .compare {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr) 90px;
+      gap: 14px;
+      align-items: center;
+      margin-block: 16px;
+    }
+
+    #mdo-strategy-site .compare-track {
+      height: 14px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(45, 41, 38, 0.08);
+    }
+
+    #mdo-strategy-site .compare-fill {
+      display: block;
+      width: var(--fill);
+      height: 100%;
+      border-radius: inherit;
+      background: var(--orange);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 800ms cubic-bezier(.22,.8,.25,1);
+    }
+
+    #mdo-strategy-site .compare.alt .compare-fill { background: var(--peach-2); }
+    #mdo-strategy-site .is-visible .compare-fill { transform: scaleX(1); }
+    #mdo-strategy-site .compare-value { text-align: end; font-weight: 500; }
+
+    #mdo-strategy-site .research-number {
+      color: var(--orange);
+      font-size: clamp(3rem, 7vw, 6.5rem);
+      font-weight: 500;
+      letter-spacing: -0.06em;
+      line-height: 0.9;
+    }
+
+    #mdo-strategy-site .research-groups {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-block-start: 34px;
+    }
+
+    #mdo-strategy-site .group {
+      padding-block-start: 14px;
+      border-block-start: 1px solid var(--line);
+    }
+
+    #mdo-strategy-site .group strong {
+      display: block;
+      margin-block-end: 4px;
+      color: var(--orange);
+      font-size: 1.55rem;
+      font-weight: 500;
+    }
+
+    #mdo-strategy-site .clean-list {
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    #mdo-strategy-site .clean-list li {
+      position: relative;
+      padding: 12px 0 12px 24px;
+      border-block-end: 1px solid var(--line);
+      line-height: 1.4;
+    }
+
+    #mdo-strategy-site .clean-list li::before {
+      content: "";
+      position: absolute;
+      inset: 20px auto auto 0;
+      width: 8px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: var(--orange);
+    }
+
+    #mdo-strategy-site .priority {
+      display: grid;
+      grid-template-columns: 70px 0.75fr 1fr 1fr;
+      gap: 22px;
+      align-items: center;
+      padding: 26px 10px;
+      border-block-end: 1px solid var(--line);
+    }
+
+    #mdo-strategy-site .priority:first-child { border-block-start: 1px solid var(--line); }
+    #mdo-strategy-site .priority-index { color: var(--orange); font-size: 2rem; font-weight: 500; }
+    #mdo-strategy-site .priority span { line-height: 1.45; }
+
+    #mdo-strategy-site .sla-flow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-block-start: 34px;
+    }
+
+    #mdo-strategy-site .sla-arrow {
+      position: absolute;
+      inset: 50% -18px auto auto;
+      z-index: 2;
+      width: 36px;
+      height: 2px;
+      background: var(--orange);
+    }
+
+    #mdo-strategy-site .sla-arrow::after {
+      content: "";
+      position: absolute;
+      inset: -4px 0 auto auto;
+      width: 9px;
+      aspect-ratio: 1;
+      border-block-start: 2px solid var(--orange);
+      border-inline-end: 2px solid var(--orange);
+      transform: rotate(45deg);
+    }
+
+    #mdo-strategy-site .sla-flow .panel:last-child .sla-arrow { display: none; }
+
+    #mdo-strategy-site .economy-main {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-block: 22px 8px;
+    }
+
+    #mdo-strategy-site .economy-main strong {
+      color: var(--orange);
+      font-size: clamp(3.2rem, 7vw, 6.5rem);
+      font-weight: 500;
+      letter-spacing: -0.06em;
+      line-height: 0.9;
+    }
+
+    #mdo-strategy-site .stress {
+      margin-block-start: 32px;
+      padding-block-start: 26px;
+      border-block-start: 1px solid var(--line);
+    }
+
+    #mdo-strategy-site .tariff-price {
+      margin-block: 26px 10px;
+      color: var(--orange);
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: -0.05em;
+    }
+
+    #mdo-strategy-site .strategy-number {
+      margin-block-end: 32px;
+      color: var(--orange);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    #mdo-strategy-site .ltv-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-block-start: 28px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: var(--line);
+    }
+
+    #mdo-strategy-site .ltv-item {
+      padding: 28px;
+      background: var(--paper-2);
+    }
+
+    #mdo-strategy-site .ltv-item strong {
+      display: block;
+      margin-block-end: 8px;
+      color: var(--orange);
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      font-weight: 500;
+      letter-spacing: -0.04em;
+    }
+
+    #mdo-strategy-site .kpi-target {
+      color: var(--orange);
+      font-size: 2.35rem;
+      font-weight: 500;
+      letter-spacing: -0.04em;
+    }
+
+    #mdo-strategy-site .kpi-status {
+      margin-block-start: 18px;
+      padding-block-start: 18px;
+      border-block-start: 1px solid var(--line);
+      color: var(--muted-ink);
+      line-height: 1.4;
+    }
+
+    #mdo-strategy-site .kpi-verdict {
+      display: inline-flex;
+      margin-block-end: 18px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      color: var(--orange-deep);
+      background: rgba(255, 90, 20, 0.10);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+    #mdo-strategy-site .kpi-verdict.good { color: #486448; background: rgba(114, 150, 110, 0.16); }
+    #mdo-strategy-site .dark .kpi-verdict { color: #fff; background: rgba(255, 255, 255, 0.14); }
+
+    #mdo-strategy-site .timeline {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-block-start: 70px;
+    }
+
+    #mdo-strategy-site .timeline::before,
+    #mdo-strategy-site .timeline-progress {
+      content: "";
+      position: absolute;
+      inset: 15px 0 auto;
+      height: 3px;
+      border-radius: 999px;
+      background: rgba(45, 41, 38, 0.12);
+    }
+
+    #mdo-strategy-site .timeline-progress {
+      z-index: 1;
+      background: var(--orange);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 1.4s cubic-bezier(.22,.8,.25,1);
+    }
+
+    #mdo-strategy-site .is-visible .timeline-progress { transform: scaleX(1); }
+
+    #mdo-strategy-site .milestone { position: relative; z-index: 2; }
+    #mdo-strategy-site .milestone-dot {
+      width: 32px;
+      aspect-ratio: 1;
+      margin-block-end: 30px;
+      border: 8px solid var(--paper);
+      border-radius: 50%;
+      background: var(--dark);
+      box-shadow: 0 0 0 1px var(--line);
+    }
+
+    #mdo-strategy-site .milestone.accent .milestone-dot { background: var(--orange); }
+    #mdo-strategy-site .milestone-date { margin-block-end: 10px; color: var(--orange-deep); font-weight: 500; }
+
+    #mdo-strategy-site .outcome-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      margin-block-start: 44px;
+    }
+
+    #mdo-strategy-site .outcome-main {
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #mdo-strategy-site .outcome-main strong {
+      color: var(--orange);
+      font-size: clamp(5rem, 14vw, 11rem);
+      font-weight: 500;
+      letter-spacing: -0.08em;
+      line-height: 0.8;
+    }
+
+    #mdo-strategy-site .outcome-side {
+      display: grid;
+      gap: 18px;
+    }
+
+    #mdo-strategy-site .source {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      align-items: center;
+      margin-block-start: 32px;
+      color: var(--muted-ink);
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    #mdo-strategy-site .source a {
+      color: var(--orange-deep);
+      text-underline-offset: 3px;
+    }
+
+    #mdo-strategy-site .reveal {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 650ms ease, transform 650ms cubic-bezier(.22,.8,.25,1);
+      transition-delay: var(--delay, 0ms);
+    }
+
+    #mdo-strategy-site.motion-ready .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+
+    #mdo-strategy-site .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 900px) {
+      #mdo-strategy-site .hero-grid,
+      #mdo-strategy-site .research-grid,
+      #mdo-strategy-site .economy-grid,
+      #mdo-strategy-site .outcome-grid { grid-template-columns: 1fr; }
+      #mdo-strategy-site .steps,
+      #mdo-strategy-site .metrics,
+      #mdo-strategy-site .findings,
+      #mdo-strategy-site .tariffs,
+      #mdo-strategy-site .strategy-grid,
+      #mdo-strategy-site .kpis,
+      #mdo-strategy-site .answers { grid-template-columns: repeat(2, 1fr); }
+      #mdo-strategy-site .priority { grid-template-columns: 50px 1fr; }
+      #mdo-strategy-site .priority span:nth-child(3),
+      #mdo-strategy-site .priority span:nth-child(4) { grid-column: 2; }
+      #mdo-strategy-site .ltv-strip { grid-template-columns: repeat(2, 1fr); }
+      #mdo-strategy-site .timeline { grid-template-columns: repeat(2, 1fr); row-gap: 50px; }
+      #mdo-strategy-site .bsc-flow { grid-template-columns: repeat(5, minmax(116px, 1fr)); overflow-x: auto; padding-block-end: 8px; }
+      #mdo-strategy-site .timeline::before,
+      #mdo-strategy-site .timeline-progress { display: none; }
+    }
+
+    @media (max-width: 620px) {
+      #mdo-strategy-site .shell { width: min(100% - 24px, 1180px); }
+      #mdo-strategy-site .section-head { display: block; }
+      #mdo-strategy-site .steps,
+      #mdo-strategy-site .metrics,
+      #mdo-strategy-site .findings,
+      #mdo-strategy-site .tariffs,
+      #mdo-strategy-site .strategy-grid,
+      #mdo-strategy-site .kpis,
+      #mdo-strategy-site .answers,
+      #mdo-strategy-site .sla-flow,
+      #mdo-strategy-site .bsc-grid,
+      #mdo-strategy-site .ltv-strip,
+      #mdo-strategy-site .timeline { grid-template-columns: 1fr; }
+      #mdo-strategy-site .bsc-module:last-child { grid-column: auto; }
+      #mdo-strategy-site .bsc-metric { grid-template-columns: 1fr; gap: 8px; }
+      #mdo-strategy-site .orbit { min-height: 320px; }
+      #mdo-strategy-site .orbit-node { width: 92px; min-height: 52px; font-size: 0.72rem; }
+      #mdo-strategy-site .compare { grid-template-columns: 110px minmax(0, 1fr) 66px; font-size: 0.82rem; }
+      #mdo-strategy-site .finance-chart { gap: 6px; }
+      #mdo-strategy-site .priority { grid-template-columns: 42px 1fr; gap: 10px; }
+      #mdo-strategy-site .answer-row { grid-template-columns: 1fr; gap: 8px; }
+      #mdo-strategy-site .sla-arrow { display: none; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #mdo-strategy-site {
+        --ink: #f5ece3;
+        --muted-ink: #c8bbb1;
+        --paper: #211d1b;
+        --paper-2: #2b2522;
+        --peach: #5b3528;
+        --peach-2: #a85f40;
+        --dark: #171514;
+        --line: rgba(255, 247, 239, 0.12);
+      }
+      #mdo-strategy-site .action.primary,
+      #mdo-strategy-site .panel.orange,
+      #mdo-strategy-site .orbit-center { color: #fff; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #mdo-strategy-site, #mdo-strategy-site * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+      #mdo-strategy-site .reveal { opacity: 1; transform: none; }
+      #mdo-strategy-site .finance-bar, #mdo-strategy-site .compare-fill, #mdo-strategy-site .timeline-progress { transform: none; }
+    }
+  </style>
+
+  <div class="progress-shell" aria-hidden="true"><span class="progress-value"></span></div>
+
+  <section class="section hero">
+    <div class="shell hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Обновленная стратегия МДО · 2026</p>
+        <h1>Сначала надежность. Затем рост через робота и РЦ.</h1>
+        <p class="lead">Повторная защита стратегии: проверенная финансовая база, сопоставимые продажи и отвалы, результаты исследования, экономика действующего робота и измеримый план до 2028 года.</p>
+        <div class="hero-actions">
+          <a class="action primary" href="assets/Стратегия МДО 2026 — повторная защита — v3.pptx">Открыть презентацию v3</a>
+          <a class="action" href="#audit">Перейти к бизнес-аудиту</a>
+          <a class="action" href="#answers">Ответы комитету</a>
+        </div>
+      </div>
+      <div class="orbit reveal" style="--delay: 120ms" role="img" aria-label="Закрытый контур МДО: робот, диспетчерская, ГИС ЖКХ и расчетный центр вокруг работы с жителем">
+        <div class="orbit-center">работа<br>с жителем</div>
+        <div class="orbit-node">робот</div>
+        <div class="orbit-node">диспетчерская</div>
+        <div class="orbit-node">РЦ</div>
+        <div class="orbit-node">ГИС ЖКХ</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Что сделано после первой защиты</p>
+          <h2>Ответили на вопросы ГК и проверили стратегию данными</h2>
+        </div>
+        <p class="lead">Вместо повторного разбора комментариев показываем, как они изменили финансовую базу, исследование, метрики и продуктовый план.</p>
+      </div>
+      <div class="steps">
+        <article class="panel reveal" style="--delay: 40ms"><span class="step-number">01</span><h3>Бизнес-показатели</h3><p class="muted">Сверены выручка, валовая прибыль, MRR, LTV, CAC и эффект аллокации.</p></article>
+        <article class="panel reveal" style="--delay: 100ms"><span class="step-number">02</span><h3>Исследование</h3><p class="muted">22 интервью и AI-аудит более 2 000 причин отказа.</p></article>
+        <article class="panel reveal" style="--delay: 160ms"><span class="step-number">03</span><h3>SLA-контур</h3><p class="muted">Запущен мониторинг клиентских сигналов, ошибок робота и телефонии.</p></article>
+        <article class="panel reveal" style="--delay: 220ms"><span class="step-number">04</span><h3>Дорожная карта</h3><p class="muted">Зафиксированы приоритеты, критерии готовности и дата РЦ — 10 сентября.</p></article>
+      </div>
+      <div class="source">Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта, ССП и дорожная карта МДО 2026</a>.</div>
+    </div>
+  </section>
+
+  <section class="section" id="audit">
+    <div class="shell">
+      <p class="eyebrow reveal">Бизнес-аудит</p>
+      <h2 class="reveal">2025: выручка выросла, но план 40 млн ₽ не выполнен</h2>
+      <p class="lead reveal">Факт — 32,742 млн ₽, рост к 2024 году — 6,4%, разрыв с планом — 7,258 млн ₽. Валовая прибыль рассчитана как начисленная выручка минус себестоимость модели 2025.</p>
+      <div class="metrics">
+        <article class="panel reveal"><div class="metric-value" data-counter="32.742" data-decimals="3">0</div><div class="metric-label">млн ₽ · фактическая выручка 2025</div></article>
+        <article class="panel peach reveal" style="--delay: 80ms"><div class="metric-value" data-counter="40" data-suffix=" млн ₽">0</div><div class="metric-label">план 2025 · недовыполнение 7,258 млн ₽</div></article>
+        <article class="panel dark reveal" style="--delay: 160ms"><div class="metric-value" data-counter="18" data-prefix="≈" data-suffix=" млн ₽">0</div><div class="metric-label muted">валовая прибыль · маржа около 55%</div></article>
+      </div>
+      <div class="fact-note reveal">Основная зафиксированная причина разрыва с планом — около пяти месяцев без устойчивого контура продаж во время перестройки команды. Инвестиции и выплаты учредителям не смешиваются с операционной эффективностью.</div>
+      <div class="finance-chart reveal" role="img" aria-label="Рост выручки МДО с 19,32 млн рублей в 2022 году до 32,742 млн рублей в 2025 году">
+        <div class="finance-column"><span class="finance-bar" style="--bar-height: 44%"></span><span class="finance-value">19,32</span><span class="finance-year">2022</span></div>
+        <div class="finance-column"><span class="finance-bar" style="--bar-height: 68%"></span><span class="finance-value">29,47</span><span class="finance-year">2023</span></div>
+        <div class="finance-column"><span class="finance-bar" style="--bar-height: 71%"></span><span class="finance-value">30,77</span><span class="finance-year">2024</span></div>
+        <div class="finance-column"><span class="finance-bar" style="--bar-height: 76%"></span><span class="finance-value">32,742</span><span class="finance-year">2025</span></div>
+      </div>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица МДО · вкладка «Аккаунты»</a> — выручка; <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта и ССП МДО</a> — маржа и финансовые ориентиры.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Продажи и отвалы · годовой и текущий срез</p>
+      <h2 class="reveal">Полный 2025 год и текущий результат января–июля 2026</h2>
+      <p class="lead reveal">Периоды разной длины: 2025 показан за январь–декабрь, 2026 — по состоянию на 16 июля. Это сравнение накопленного результата, а не темпа за одинаковое число месяцев.</p>
+      <div class="economy-grid">
+        <article class="panel reveal">
+          <h3>Январь–декабрь 2025</h3>
+          <div class="compare"><span>Новые клиенты</span><span class="compare-track"><span class="compare-fill" style="--fill: 100%"></span></span><span class="compare-value">13</span></div>
+          <div class="compare"><span>Годовой тариф новых</span><span class="compare-track"><span class="compare-fill" style="--fill: 100%"></span></span><span class="compare-value">4,604</span></div>
+          <div class="compare"><span>Полные отвалы</span><span class="compare-track"><span class="compare-fill" style="--fill: 100%"></span></span><span class="compare-value">11</span></div>
+          <div class="compare"><span>Тариф отвалов</span><span class="compare-track"><span class="compare-fill" style="--fill: 100%"></span></span><span class="compare-value">1,606</span></div>
+        </article>
+        <article class="panel peach reveal" style="--delay: 100ms">
+          <h3>Январь–16 июля 2026</h3>
+          <div class="compare alt"><span>Новые клиенты</span><span class="compare-track"><span class="compare-fill" style="--fill: 38%"></span></span><span class="compare-value">5</span></div>
+          <div class="compare alt"><span>Годовой тариф новых</span><span class="compare-track"><span class="compare-fill" style="--fill: 26%"></span></span><span class="compare-value">1,214</span></div>
+          <div class="compare alt"><span>Полные отвалы</span><span class="compare-track"><span class="compare-fill" style="--fill: 36%"></span></span><span class="compare-value">4</span></div>
+          <div class="compare alt"><span>Тариф отвалов</span><span class="compare-track"><span class="compare-fill" style="--fill: 22%"></span></span><span class="compare-value">0,346</span></div>
+        </article>
+      </div>
+      <div class="metrics" style="margin-block-start: 18px">
+        <article class="panel reveal"><div class="metric-value">13 → 5</div><div class="metric-label">новые клиенты: полный 2025 → текущий 2026</div></article>
+        <article class="panel peach reveal" style="--delay: 70ms"><div class="metric-value">11 → 4</div><div class="metric-label">полные отвалы: полный 2025 → текущий 2026</div></article>
+        <article class="panel dark reveal" style="--delay: 140ms"><div class="metric-value">3,00 → 0,87</div><div class="metric-label muted">млн ₽ чистого годового тарифа; 2026 год еще не завершен</div></article>
+      </div>
+      <div class="source">Источник: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица МДО · вкладка «Клиенты»</a>, проверено 16.07.2026. Количество включает все новые клиентские отношения; годовой тариф рассчитан по ненулевому текущему MRR как MRR × 12. Суммы округлены до млн ₽.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Действующая база</p>
+      <h2 class="reveal">Действующая база: 159 клиентов. Текущие задачи — удержание и тарифный апсейл после улучшения сервиса, робота и SLA</h2>
+      <div class="kpis">
+        <article class="panel reveal"><div class="metric-value" data-counter="159">0</div><div class="metric-label">активных клиентов · MRR 2,803 млн ₽ · средний ARPU 17,6 тыс. ₽</div></article>
+        <article class="panel reveal" style="--delay: 50ms"><div class="metric-value">15,5 тыс. ₽</div><div class="metric-label">ARPU компонента «Сервис» · 136 активных клиентов</div></article>
+        <article class="panel peach reveal" style="--delay: 100ms"><div class="metric-value">33,7 тыс. ₽</div><div class="metric-label">ARPU компонента «ЭКСП» · 18 активных клиентов</div></article>
+        <article class="panel reveal" style="--delay: 150ms"><div class="metric-value" data-counter="60">0</div><div class="metric-label">сервисных УК · рабочая сегментация · 43% MRR</div></article>
+      </div>
+      <article class="panel dark reveal" style="margin-block-start: 18px">
+        <h3>Три повторяющихся сценария оттока</h3>
+        <p class="muted">105 внешних диспетчерских использовали робота не менее 10 минут в апреле. Надежность этого контура напрямую влияет на удержание.</p>
+        <div class="steps" style="margin-block-start: 28px">
+          <div><span class="step-number">1</span><p>Сбой робота или диспетчерской и пропущенное аварийное обращение.</p></div>
+          <div><span class="step-number">2</span><p>Нет 24/7-поддержки или проблема телефонии остается без реакции.</p></div>
+          <div><span class="step-number">3</span><p>Не реализована функция или интеграция, критичная для процесса клиента.</p></div>
+          <div><span class="step-number">→</span><p>Поэтому SLA — продуктовый приоритет перед ускорением продаж.</p></div>
+        </div>
+      </article>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица МДО</a> · <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">исследование МДО 2026</a>.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Исследование после защиты</p>
+      <h2 class="reveal">22 интервью и AI-аудит более 2 000 причин отказа</h2>
+      <div class="research-grid">
+        <article class="panel reveal">
+          <div class="research-number">22</div>
+          <h3>участника в четырех группах</h3>
+          <div class="research-groups">
+            <div class="group"><strong>8</strong><span>экспертов сервисных УК Москвы</span></div>
+            <div class="group"><strong>4</strong><span>новых клиента МДО</span></div>
+            <div class="group"><strong>6</strong><span>отказались от покупки</span></div>
+            <div class="group"><strong>4</strong><span>ушедших клиента</span></div>
+          </div>
+        </article>
+        <article class="panel dark reveal" style="--delay: 100ms">
+          <p class="eyebrow">AI-аудит Bitrix</p>
+          <div class="research-number">1 567 · 63,1%</div>
+          <h3>сохранили собственный или ручной процесс</h3>
+          <p class="muted">Еще 543 причины, или 21,9%, помечены как «конкурент» без точного поставщика. Это структура записей CRM МДО, а не оценка доли рынка.</p>
+        </article>
+      </div>
+      <div class="fact-note reveal">После AI-анализа Bitrix команда перешла к более подробным комментариям по сделкам. Качество записей уже месяц регулярно контролируют руководитель отдела продаж и продакт, чтобы следующие срезы точнее объясняли причины отказов и оттока.</div>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">Road map исследования МДО 2026</a> · <a href="https://docs.google.com/spreadsheets/d/1eahtz5m0pgX2LRQlhZR9ahxcT8a-BPfJfK_dAI-yVeY/edit" target="_blank" rel="noreferrer">анализ гипотез по интервью</a>.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Что показало исследование</p>
+      <h2 class="reveal">Покупка, отказ и спрос целевого сегмента — это разные выборки</h2>
+      <div class="findings">
+        <article class="panel reveal">
+          <h3>Почему покупают</h3>
+          <ul class="clean-list"><li>понятная диспетчеризация</li><li>экспертный запуск и поддержка</li><li>конкурентный тариф</li><li>робот для типовых обращений и обзвона</li></ul>
+        </article>
+        <article class="panel peach reveal" style="--delay: 80ms">
+          <h3>Почему отказываются</h3>
+          <ul class="clean-list"><li>остаются в Excel / 1С / Bitrix</li><li>предпочитают живого диспетчера</li><li>не видят доказанного отличия</li><li>боятся сложного перехода</li></ul>
+        </article>
+        <article class="panel dark reveal" style="--delay: 160ms">
+          <h3>Что требует целевой клиент</h3>
+          <ul class="clean-list"><li>единое окно и гибкость</li><li>ГИС ЖКХ / 1С без двойной работы</li><li>удобное приложение жителя</li><li>AI-диспетчер, который консультирует</li></ul>
+        </article>
+      </div>
+      <article class="panel orange reveal" style="margin-block-start: 18px"><h3>Робот создает спрос только при доказанной надежности</h3><p class="muted">Иначе тот же модуль становится причиной оттока. Поэтому экономика и SLA робота рассматриваются вместе.</p></article>
+      <div class="source">Источник: <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">Road map исследования МДО 2026 · интервью и гипотезы</a>.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Приоритеты развития МДО на 2026</p>
+      <h2 class="reveal">Четыре направления напрямую следуют из клиентского риска и спроса</h2>
+      <div class="priority-list reveal">
+        <div class="priority"><span class="priority-index">01</span><h3>Надежность</h3><span><b>Риск:</b> пропущенная авария или недоступный канал.</span><span><b>Действие:</b> uptime, ошибки, аварийный маршрут, владелец реакции.</span></div>
+        <div class="priority"><span class="priority-index">02</span><h3>Робот</h3><span><b>Спрос:</b> разгрузка типовых обращений и консультация.</span><span><b>Действие:</b> улучшить текущий модуль и проверить AI-сценарий.</span></div>
+        <div class="priority"><span class="priority-index">03</span><h3>Расчетный центр</h3><span><b>Спрос:</b> биллинг, содержание или полный расчет.</span><span><b>Действие:</b> пилот, контрольный расчет, ГИС ЖКХ, продажи.</span></div>
+        <div class="priority"><span class="priority-index">04</span><h3>ГИС ЖКХ</h3><span><b>Ценность:</b> убрать двойную работу.</span><span><b>Действие:</b> единое окно по заявкам и расчетам.</span></div>
+      </div>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">исследование МДО 2026</a> · <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта и roadmap</a>.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Контур SLA в работе команды</p>
+      <h2 class="reveal">Какие SLA и метрики команда уже контролирует</h2>
+      <p class="lead reveal">Контроль уже встроен в работу команды. Uptime, пороги и нормативы реакции по части показателей еще формализуются.</p>
+      <div class="sla-flow">
+        <article class="panel reveal"><span class="sla-arrow" aria-hidden="true"></span><span class="step-number">1</span><h3>Сигнал</h3><p class="muted">Падает активность диспетчерской или робота; растут ошибки телефонии.</p></article>
+        <article class="panel peach reveal" style="--delay: 100ms"><span class="sla-arrow" aria-hidden="true"></span><span class="step-number">2</span><h3>Проверка</h3><p class="muted">Аккаунт сопоставляет метрику с обращениями и контекстом клиента.</p></article>
+        <article class="panel dark reveal" style="--delay: 200ms"><span class="sla-arrow" aria-hidden="true"></span><span class="step-number">3</span><h3>Реакция</h3><p class="muted">Исправление, контакт для удержания или предложение апсейла.</p></article>
+      </div>
+      <div class="kpis" style="margin-block-start: 18px">
+        <article class="panel reveal"><h3>Аккаунтинг</h3><p class="muted">Риск оттока и действие по клиенту · еженедельно.</p></article>
+        <article class="panel reveal"><h3>Продажи + продукт</h3><p class="muted">CAC и payback · ежеквартально.</p></article>
+        <article class="panel reveal"><h3>Поддержка</h3><p class="muted">Скорость, качество и закрытие тикетов · ежемесячно.</p></article>
+        <article class="panel reveal"><h3>Разработка</h3><p class="muted">Uptime робота, CRM и МП · норматив формализуется.</p></article>
+      </div>
+      <div class="source">SLA = показатель + порог + владелец + срок реакции. Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">ССП, владельцы и дорожная карта МДО 2026</a>.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Экономика робота</p>
+      <h2 class="reveal">Текущий робот экономически укладывается в тариф</h2>
+      <div class="economy-grid">
+        <article class="panel reveal">
+          <h3>Средний фактический клиент</h3>
+          <div class="economy-main"><strong data-counter="923">0</strong><span>минут / месяц</span></div>
+          <p class="muted">8,1 тыс. помещений · 1,85 тыс. ₽ переменной себестоимости при 2 ₽/мин.</p>
+          <div class="stress"><h3>Тариф сервисной УК</h3><div class="metric-value">44–55 тыс. ₽</div><p class="muted">8–10 тыс. ЛС × 5,5 ₽</p></div>
+        </article>
+        <article class="panel dark reveal" style="--delay: 100ms">
+          <h3>Нагрузка робота на тариф</h3>
+          <div class="economy-main"><strong data-counter="4" data-prefix="3–" data-suffix="%">0</strong></div>
+          <p class="muted">при фактической интенсивности</p>
+          <div class="stress"><div class="metric-value">22–27%</div><p class="muted">стресс-сценарий: 6 000 минут = 12 тыс. ₽</p></div>
+        </article>
+      </div>
+      <div class="fact-note reveal">Расчет относится к действующему роботу. Экономика консультирующей AI-версии будет считаться отдельно: стек, точность, поддержка и полный TCO до голосового пилота.</div>
+      <div class="source">Срез: 105 внешних диспетчерских с активностью ≥10 минут, апрель 2026. Контекст гипотезы: <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">исследование МДО 2026</a>. Это не прибыль: полная P&amp;L дополнительно включает поддержку, инфраструктуру, разработку и налоги.</div>
+    </div>
+  </section>
+
+  <section class="section">
+      <div class="shell">
+      <p class="eyebrow reveal">Расчетный центр · текущая ситуация</p>
+      <h2 class="reveal">Готов MVP, добавлены новые тарифы, платящий клиент МДО вошел в пилотный контур РЦ</h2>
+      <p class="lead reveal">Клиент оплатил диспетчеризацию и участвует в проверке РЦ. Это не означает, что услуга РЦ уже продана отдельно или готова к промышленной эксплуатации.</p>
+      <div class="tariffs">
+        <article class="panel reveal"><div class="tariff-price">15 ₽ / ЛС</div><h3>Биллинг МДО</h3><p class="muted">Клиент считает самостоятельно; МДО дает систему, обучение и сопровождение.</p></article>
+        <article class="panel peach reveal" style="--delay: 80ms"><div class="tariff-price">20 ₽ / ЛС</div><h3>Расчет содержания</h3><p class="muted">МДО рассчитывает содержание; коммунальные услуги остаются вне контура.</p></article>
+        <article class="panel dark reveal" style="--delay: 160ms"><div class="tariff-price">40 ₽ / ЛС</div><h3>Расчетный центр</h3><p class="muted">Полный согласованный расчетный цикл и персональный специалист.</p></article>
+      </div>
+      <div class="metrics" style="margin-block-start: 18px">
+        <article class="panel reveal"><div class="metric-value">1 клиент</div><div class="metric-label">оплатил диспетчеризацию; РЦ проверяется в пилотном контуре</div></article>
+        <article class="panel reveal" style="--delay: 80ms"><div class="metric-value">Dev stand</div><div class="metric-label">показаны норматив, пени и 30/30 квитанций; production readiness не подтверждена</div></article>
+        <article class="panel reveal" style="--delay: 160ms"><div class="metric-value">10.09</div><div class="metric-label">контрольный расчет; ГИС и обмены требуют проверки</div></article>
+      </div>
+      <div class="fact-note reveal">Критерий готовности: расчет сходится, расхождения объяснимы, квитанции проверены, клиент подтверждает методику. Дата 10 сентября — контроль пилотной готовности, а не обещание полного production.</div>
+      <div class="source">Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">roadmap РЦ и стратегическая карта МДО 2026</a>.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Стратегия 2026</p>
+      <h2 class="reveal">За счет создания надежного сервиса МДО формирует закрытый контур работы с жителем</h2>
+      <div class="strategy-grid">
+        <article class="panel reveal"><div class="strategy-number">01</div><h3>Надежная SaaS-база</h3><p class="muted">CRM, диспетчерская, мобильное приложение, MAX, поддержка. Удержание и апсейл действующей базы.</p></article>
+        <article class="panel reveal" style="--delay: 70ms"><div class="strategy-number">02</div><h3>ГИС ЖКХ</h3><p class="muted">Единое окно по заявкам и обязательный интеграционный контур для робота и РЦ.</p></article>
+        <article class="panel orange reveal" style="--delay: 140ms"><div class="strategy-number">03</div><h3>Умный робот-диспетчер</h3><p class="muted">Прием обращений → консультация → голос. Пилоты — только при измеримом SLA.</p></article>
+        <article class="panel dark reveal" style="--delay: 210ms"><div class="strategy-number">04</div><h3>Расчетный центр</h3><p class="muted">Биллинг, содержание или полный цикл: рост ARPU и выход на более крупных клиентов.</p></article>
+      </div>
+
+      <div class="ltv-strip reveal" aria-label="Средняя экономика действующего клиента на горизонте трех лет">
+        <div class="ltv-item"><strong>≈470 тыс. ₽</strong><span>средняя трехлетняя выручка на действующего клиента</span></div>
+        <div class="ltv-item"><strong>≈259 тыс. ₽</strong><span>средняя трехлетняя валовая прибыль на клиента</span></div>
+        <div class="ltv-item"><strong>≈335 тыс. ₽</strong><span>средний CAC по расходам января–мая</span></div>
+        <div class="ltv-item"><strong>≈47 мес.</strong><span>расчетный payback; длиннее трехлетнего горизонта</span></div>
+      </div>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица МДО</a> · <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта и ССП</a>. Расчет: 74,766 млн ₽ / 159 клиентов = 470 тыс. ₽ выручки за три года; 470 тыс. ₽ × 55% = 259 тыс. ₽ валовой прибыли; CAC = 1,338 млн ₽ / 4 клиента = 335 тыс. ₽; payback = 335 / (259 / 36) ≈ 47 месяцев.</div>
+    </div>
+  </section>
+
+  <section class="section" id="bsc">
+    <div class="shell">
+      <p class="eyebrow reveal">ССП МДО 2026</p>
+      <h2 class="reveal">Что уже работает как управленческий показатель, а что внедряется</h2>
+      <p class="lead reveal">ССП связывает ежедневную работу команды с финансовым результатом. Цепочка читается слева направо: ведущие показатели формируют качество продукта, клиентский результат и экономику.</p>
+
+      <div class="bsc-flow reveal" aria-label="Причинная цепочка ССП: команда, процессы, продукт, клиенты, финансы">
+        <div class="bsc-node">Команда</div>
+        <div class="bsc-node">Процессы</div>
+        <div class="bsc-node">Продукт</div>
+        <div class="bsc-node">Клиенты</div>
+        <div class="bsc-node">Финансы</div>
+      </div>
+
+      <div class="bsc-grid">
+        <article class="panel bsc-module reveal">
+          <div class="bsc-module-head"><h3>Команда и способности</h3><span class="bsc-module-index">01</span></div>
+          <div class="bsc-metrics">
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Еженедельная продуктовая вовлеченность</h4><p>Все функциональные роли — от аккаунта до первой линии поддержки — участвуют в развитии продукта. Это ведущий показатель качества решений, удержания и будущей выручки.</p><span class="metric-owner">Сайдулин · еженедельно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>Выполнение продуктовой дорожной карты</h4><p>Доля задач, закрытых в срок, с отдельными владельцами по направлениям.</p><span class="metric-owner">Сайдулин + владельцы задач · ежемесячно</span></div></div>
+          </div>
+        </article>
+
+        <article class="panel bsc-module reveal" style="--delay: 60ms">
+          <div class="bsc-module-head"><h3>Процессы</h3><span class="bsc-module-index">02</span></div>
+          <div class="bsc-metrics">
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Срок внедрения клиента</h4><p>В плане интеграций фиксируются начало, завершение и продолжительность. Для ССП считаем новые внедрения основного сервиса без довнедрений и дублей модулей.</p><span class="metric-owner">Скоробогатов · ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Аудит качества Bitrix</h4><p>РОП и продакт контролируют комментарии, воронку и причины отказа; следующий шаг — доля полностью заполненных сделок.</p><span class="metric-owner">Амосов · раз в две недели</span></div></div>
+            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>SLA поддержки и точность интеграции</h4><p>Время ответа и решения, доля обращений в срок, соответствие результата интеграции согласованному опросному листу.</p><span class="metric-owner">Скоробогатов · ежемесячно</span></div></div>
+          </div>
+        </article>
+
+        <article class="panel bsc-module reveal" style="--delay: 120ms">
+          <div class="bsc-module-head"><h3>Продукт и надежность</h3><span class="bsc-module-index">03</span></div>
+          <div class="bsc-metrics">
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Ошибки робота и телефонии</h4><p>Отслеживаются сбои, ошибки маршрутизации и критические жалобы, которые могут привести к оттоку.</p><span class="metric-owner">Корсунова + Скоробогатов · еженедельно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>Uptime робота, CRM и МП</h4><p>Процент бесперебойной работы и доля пропущенных аварийных обращений переводятся в формальный SLA.</p><span class="metric-owner">Корсунова + Скоробогатов</span></div></div>
+            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>Готовность и конверсия РЦ</h4><p>Контрольный расчет, завершение этапов пилота, количество пилотных клиентов и переход пилотов в оплату.</p><span class="metric-owner">Сайдулин + 66bit; продажи — Амосов</span></div></div>
+          </div>
+        </article>
+
+        <article class="panel bsc-module reveal" style="--delay: 180ms">
+          <div class="bsc-module-head"><h3>Клиенты и рынок</h3><span class="bsc-module-index">04</span></div>
+          <div class="bsc-metrics">
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Новые продажи и полный churn</h4><p>Количество новых клиентов и годовой тариф; количество полностью ушедших клиентов и потерянный годовой тариф. Смена тарифа не является churn.</p><span class="metric-owner">Продажи — Амосов; удержание — Скоробогатов · ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Риск оттока и потенциал апсейла</h4><p>Изменение использования робота и диспетчерской относительно предыдущих трех месяцев запускает работу аккаунта.</p><span class="metric-owner">Скоробогатов + аккаунт-менеджер</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Уникальные жители МДО</h4><p>Один профиль жителя в админке независимо от канала — мобильное приложение или MAX. Дубли между каналами не возникают.</p><span class="metric-owner">Методика — Сайдулин; качество данных — Скоробогатов · ежемесячно</span></div></div>
+          </div>
+        </article>
+
+        <article class="panel peach bsc-module reveal" style="--delay: 240ms">
+          <div class="bsc-module-head"><h3>Финансы</h3><span class="bsc-module-index">05</span></div>
+          <div class="bsc-metrics">
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>MRR и ARPU</h4><p>Регулярная выручка и средний чек контролируются по действующей базе и тарифам.</p><span class="metric-owner">Амосов; методика — Сайдулин · ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>Регулярная валовая маржа</h4><p>База 2025 подтверждена; показатель переводится из годового среза в квартальный управленческий расчет.</p><span class="metric-owner">Сайдулин + Шильников / Ленский · ежеквартально</span></div></div>
+            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>CAC по каналам и payback</h4><p>Расчетная модель по холоду, агентам и РЦ создана. Для ССП накапливается факт, а окупаемость считается по валовой прибыли, не по выручке.</p><span class="metric-owner">Амосов + Сайдулин · ежеквартально</span></div></div>
+            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>Выручка новых направлений</h4><p>Отдельный учет холодных и агентских продаж, РЦ, MAX и AI-робота.</p><span class="metric-owner">Сайдулин + Амосов · ежеквартально</span></div></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="fact-note reveal"><b>«Внедрено»</b> — есть источник, владелец и регулярный управленческий процесс. <b>«Внедряется»</b> — расчет или процесс уже начат, но требуется стабильный ряд факта, окончательная формула либо целевой порог.</div>
+      <div class="bsc-links reveal" aria-label="Рабочие источники ССП">
+        <a class="bsc-link" href="https://docs.google.com/spreadsheets/d/1myDVsg86Z8uXcNFLGdd_CMByUJWog-SQRc37WLdsBf0/edit" target="_blank" rel="noreferrer">Метрики команды</a>
+        <a class="bsc-link" href="https://docs.google.com/spreadsheets/d/1eXuPYSERxftlz7CcDAXYeiaycfVbd6nc5InQsXvTRi0/edit" target="_blank" rel="noreferrer">Расчет CAC</a>
+        <a class="bsc-link" href="https://docs.google.com/spreadsheets/d/1SXMGCJ-5PmBiljIYCnCXwqYkfO1BE-H6tSRFAatGuTs/edit" target="_blank" rel="noreferrer">План интеграций</a>
+        <a class="bsc-link" href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица</a>
+        <a class="bsc-link" href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">Стратегическая карта</a>
+      </div>
+      <div class="source">Основные источники: <a href="https://docs.google.com/spreadsheets/d/1myDVsg86Z8uXcNFLGdd_CMByUJWog-SQRc37WLdsBf0/edit" target="_blank" rel="noreferrer">ССП и метрики команды</a> · <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта</a>. Статусы отражают фактическую зрелость измерения на 17.07.2026.</div>
+    </div>
+  </section>
+
+  <section class="section">
+      <div class="shell">
+      <p class="eyebrow reveal">KPI 2026</p>
+      <h2 class="reveal">Статус KPI 2026: что близко к цели, что в работе и что нужно пересмотреть</h2>
+      <div class="kpis">
+        <article class="panel peach reveal"><span class="kpi-verdict">Требует пересмотра</span><h3>Выручка</h3><div class="kpi-target">45 млн ₽</div><div class="kpi-status">H1 16,42 млн ₽ · текущий темп ≈32,84 млн ₽/год</div></article>
+        <article class="panel reveal" style="--delay: 50ms"><span class="kpi-verdict good">Близко к цели</span><h3>MRR</h3><div class="kpi-target">2,95 млн ₽</div><div class="kpi-status">факт 2,803 млн ₽ · 95% · регулярные начисления, не поступления</div></article>
+        <article class="panel peach reveal" style="--delay: 100ms"><span class="kpi-verdict">Требует пересмотра</span><h3>Новые клиенты</h3><div class="kpi-target">40</div><div class="kpi-status">факт 5 · осталось 35, или ≈6,4 клиента/мес.</div></article>
+        <article class="panel reveal" style="--delay: 150ms"><span class="kpi-verdict good">Единый профиль</span><h3>Уникальные жители, подключенные к МДО</h3><div class="kpi-target">90 тыс.</div><div class="kpi-status">один житель в админке независимо от канала: МП или MAX</div></article>
+        <article class="panel reveal"><span class="kpi-verdict good">Цель подтверждена базой</span><h3>Валовая маржа</h3><div class="kpi-target">≥50%</div><div class="kpi-status">база 2025: ≈55%</div></article>
+        <article class="panel dark reveal" style="--delay: 50ms"><span class="kpi-verdict">Контрольная дата</span><h3>Расчетный центр</h3><div class="kpi-target">10.09.26</div><div class="kpi-status">контроль пилотной готовности, не полный production</div></article>
+        <article class="panel reveal" style="--delay: 100ms"><span class="kpi-verdict">В работе</span><h3>Надежность</h3><div class="kpi-target">SLA</div><div class="kpi-status">uptime и сроки реакции формализуются</div></article>
+      </div>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица МДО</a> · <a href="https://docs.google.com/spreadsheets/d/1c0iUc44wljmllpDoy-1C-2aQ3t-Q9m7SlU5r1KXgt0Y/edit" target="_blank" rel="noreferrer">БД Метрики</a> · <a href="https://docs.google.com/spreadsheets/d/1myDVsg86Z8uXcNFLGdd_CMByUJWog-SQRc37WLdsBf0/edit" target="_blank" rel="noreferrer">ССП и метрики команды</a>.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Q3–Q4 2026</p>
+      <h2 class="reveal">Сначала готовность и пилоты, затем масштабирование</h2>
+      <div class="timeline reveal">
+        <span class="timeline-progress" aria-hidden="true"></span>
+        <article class="milestone"><div class="milestone-dot"></div><div class="milestone-date">Июль</div><h3>Контроль</h3><p class="muted">SLA и ошибки робота — Корсунова + Скоробогатов. Данные ГИС и AI-прототип — Сайдулин + Корсунова.</p></article>
+        <article class="milestone"><div class="milestone-dot"></div><div class="milestone-date">Август</div><h3>Интеграция</h3><p class="muted">ГИС и SLA-модуль — Сайдулин + Корсунова. Контур РЦ — Сайдулин + 66bit.</p></article>
+        <article class="milestone accent"><div class="milestone-dot"></div><div class="milestone-date">10 сентября</div><h3>Контроль РЦ</h3><p class="muted">Контрольный расчет — Сайдулин + 66bit + эксперт. Решение о старте продаж биллинга.</p></article>
+        <article class="milestone"><div class="milestone-dot"></div><div class="milestone-date">Q4</div><h3>Масштабирование</h3><p class="muted">Апсейл — Амосов + аккаунт. AI-пилоты — Сайдулин + Корсунова.</p></article>
+      </div>
+      <div class="source">Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">дорожная карта МДО 2026</a>, актуализация 16.07.2026.</div>
+    </div>
+  </section>
+
+  <section class="section" id="answers">
+    <div class="shell">
+      <p class="eyebrow reveal">Ответы на вопросы первой защиты</p>
+      <h2 class="reveal">Короткий ответ — затем подтверждающая цифра или рабочий документ</h2>
+      <div class="answers">
+        <article class="panel reveal">
+          <h3>Бизнес и финансы</h3>
+          <dl class="answer-list">
+            <div class="answer-row"><dt>Почему не выполнен план 2025?<span class="asked-by">Михаил Бабкин · Елена Корецкая · Оксана Погодаева</span></dt><dd>План 40,0 млн ₽, факт 32,742 млн ₽, разрыв 7,258 млн ₽; около пяти месяцев без устойчивого контура продаж.</dd></div>
+            <div class="answer-row"><dt>Прибыль до и после аллокации?<span class="asked-by">Эдуард Гроде · Елена Корецкая</span></dt><dd>Аллокация мала относительно OPEX и не объясняет убыток. Инвестиции и выплаты находятся ниже операционной линии.</dd></div>
+            <div class="answer-row"><dt>Что дает найм продаж?<span class="asked-by">Эдуард Гроде</span></dt><dd>CAC около 335 тыс. ₽, расчетный payback по валовой прибыли — около 47 месяцев, то есть дольше трехлетнего горизонта. Масштабирование найма — после снижения CAC или роста валовой прибыли клиента.</dd></div>
+            <div class="answer-row"><dt>Почему без капитализации?<span class="asked-by">Иван Клевцов</span></dt><dd>Это решение учредителей. Операционная стратегия отвечает за выручку, маржу, churn и окупаемость.</dd></div>
+          </dl>
+        </article>
+        <article class="panel dark reveal" style="--delay: 100ms">
+          <h3>Стратегия и исполнение</h3>
+          <dl class="answer-list">
+            <div class="answer-row"><dt>Где карта и ССП?<span class="asked-by">Михаил Бабкин · Елена Корецкая · Оксана Погодаева</span></dt><dd>Пять блоков: финансы, клиенты, продукт, процессы и команда; у каждой цели есть метрика, владелец и статус.</dd></div>
+            <div class="answer-row"><dt>Где дорожная карта?<span class="asked-by">Михаил Бабкин · Елена Корецкая</span></dt><dd>Она приведена выше; единая контрольная дата РЦ — 10.09.2026.</dd></div>
+            <div class="answer-row"><dt>Главный драйвер роста?<span class="asked-by">Иван Клевцов</span></dt><dd>Надежный робот — вход в продажу; ГИС — единое окно; РЦ — рост ARPU после проверки fit.</dd></div>
+            <div class="answer-row"><dt>РЦ уже готов?<span class="asked-by">Елена Корецкая</span></dt><dd>Нет. Платящий клиент МДО вошел в пилот; production readiness и прямой обмен с ГИС не подтверждены.</dd></div>
+          </dl>
+        </article>
+      </div>
+      <div class="fact-note reveal">Doma.ai рассматривается как один из конкурентов, но не как единственный рыночный бенчмарк: в исследовании сравнивались также собственные процессы клиентов и другие классы решений.</div>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегия, ССП и roadmap</a> · <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица</a> · <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">исследование 2026</a>.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Кем МДО становится в 2027–2028 годах</p>
+      <h2 class="reveal">Лидер по разгрузке диспетчеризации и закрытому контуру работы с жителем</h2>
+      <div class="outcome-grid">
+        <article class="panel dark outcome-main reveal">
+          <strong>100%</strong>
+          <h3>новых продаж, где робот-диспетчер — причина выбора МДО</h3>
+        </article>
+        <div class="outcome-side">
+          <article class="panel peach reveal" style="--delay: 70ms"><div class="metric-value">30%</div><p>новых продаж вместе с РЦ, биллингом или расчетной услугой</p></article>
+          <article class="panel reveal" style="--delay: 140ms"><div class="metric-value">25%</div><p>новых клиентов — сервисные УК Москвы</p></article>
+          <article class="panel orange reveal" style="--delay: 210ms"><div class="metric-value">30%</div><p>новых клиентов — РСО с разгрузкой абонентского контура через AI-робота</p></article>
+        </div>
+      </div>
+      <div class="source">Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта МДО 2026–2028</a>. Сегменты могут пересекаться с продуктовым миксом.</div>
+    </div>
+  </section>
+
+  <script>
+    (() => {
+      const root = document.getElementById('mdo-strategy-site');
+      if (!root) return;
+
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const reveals = [...root.querySelectorAll('.reveal')];
+      const counters = [...root.querySelectorAll('[data-counter]')];
+      const progress = root.querySelector('.progress-value');
+
+      if ('IntersectionObserver' in window && !reducedMotion) {
+        root.classList.add('motion-ready');
+      }
+
+      const formatCounter = (value, element) => {
+        const decimals = Number(element.dataset.decimals || 0);
+        const prefix = element.dataset.prefix || '';
+        const suffix = element.dataset.suffix || '';
+        return prefix + value.toLocaleString('ru-RU', {
+          minimumFractionDigits: decimals,
+          maximumFractionDigits: decimals
+        }) + suffix;
+      };
+
+      const animateCounter = (element) => {
+        if (element.dataset.done === 'true') return;
+        element.dataset.done = 'true';
+        const target = Number(element.dataset.counter || 0);
+        if (reducedMotion) {
+          element.textContent = formatCounter(target, element);
+          return;
+        }
+        const duration = 900;
+        const start = performance.now();
+        const tick = (now) => {
+          const progressValue = Math.min(1, (now - start) / duration);
+          const eased = 1 - Math.pow(1 - progressValue, 3);
+          element.textContent = formatCounter(target * eased, element);
+          if (progressValue < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+
+      if ('IntersectionObserver' in window && !reducedMotion) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            entry.target.querySelectorAll('[data-counter]').forEach(animateCounter);
+            if (entry.target.matches('[data-counter]')) animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          });
+        }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+        reveals.forEach((element) => observer.observe(element));
+        counters.forEach((element) => observer.observe(element));
+      } else {
+        reveals.forEach((element) => element.classList.add('is-visible'));
+        counters.forEach(animateCounter);
+      }
+
+      const updateProgress = () => {
+        if (!progress) return;
+        const page = document.documentElement;
+        const max = Math.max(1, page.scrollHeight - window.innerHeight);
+        progress.style.transform = `scaleX(${Math.min(1, Math.max(0, window.scrollY / max))})`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</main>
+
+</body>
+</html>
