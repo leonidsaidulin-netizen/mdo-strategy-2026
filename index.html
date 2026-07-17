@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Обновленная стратегия Мой дом онлайн 2026: план и факт, продажи и отвалы, исследование, SLA, экономика робота, пилот РЦ, KPI и ответы комитету.">
+<meta name="description" content="Обновленная стратегия Мой дом онлайн 2026: план и факт, продажи, апсейлы и отвалы, исследование, SLA, экономика клиентской базы, пилот РЦ, KPI и ответы комитету.">
 <title>Стратегия МДО 2026 — повторная защита — v3</title>
 <style>html{scroll-behavior:smooth;background:#fffaf3}body{margin:0;min-width:320px;background:#fffaf3}a:focus-visible{outline:3px solid #ff5a14;outline-offset:4px}</style>
 </head>
@@ -683,7 +683,7 @@
 
     #mdo-strategy-site .acquisition-row {
       display: grid;
-      grid-template-columns: minmax(170px, 1.5fr) repeat(3, minmax(100px, 0.75fr));
+      grid-template-columns: minmax(170px, 1.5fr) repeat(4, minmax(92px, 0.72fr));
       gap: 14px;
       align-items: center;
       padding-block: 15px;
@@ -702,6 +702,34 @@
     #mdo-strategy-site .acquisition-row.total {
       color: #fff;
       font-weight: 650;
+    }
+
+    #mdo-strategy-site .finance-monthly-table {
+      min-width: 1050px;
+      border-block: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    #mdo-strategy-site .finance-monthly-row {
+      display: grid;
+      grid-template-columns: 86px repeat(7, minmax(112px, 1fr));
+      gap: 14px;
+      align-items: center;
+      padding-block: 14px;
+      border-block-start: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    #mdo-strategy-site .finance-monthly-row:first-child { border-block-start: 0; }
+    #mdo-strategy-site .finance-monthly-row span:not(:first-child) { text-align: end; }
+    #mdo-strategy-site .finance-monthly-row.head {
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 0.68rem;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+
+    #mdo-strategy-site .finance-monthly-row.total {
+      color: #fff;
+      font-weight: 700;
     }
 
     #mdo-strategy-site .kpi-target {
@@ -913,7 +941,7 @@
       <div class="reveal">
         <p class="eyebrow">Обновленная стратегия МДО · 2026</p>
         <h1>Сначала надежность. Затем рост через робота и РЦ.</h1>
-        <p class="lead">Повторная защита стратегии: проверенная финансовая база, сопоставимые продажи и отвалы, результаты исследования, экономика действующего робота и измеримый план до 2028 года.</p>
+        <p class="lead">Повторная защита стратегии: проверенная финансовая база, раздельный учет продаж, клиентов и апсейлов, результаты исследования, экономика действующей базы и измеримый план до 2028 года.</p>
         <div class="hero-actions">
           <a class="action primary" href="assets/Стратегия МДО 2026 — повторная защита — v3.pptx">Открыть презентацию v3</a>
           <a class="action" href="#audit">Перейти к бизнес-аудиту</a>
@@ -972,79 +1000,77 @@
 
   <section class="section" id="finance-dept">
     <div class="shell">
-      <p class="eyebrow reveal">Данные Финдепа · октябрь 2025 — июнь 2026</p>
-      <h2 class="reveal">До инвестиций МДО дает +2,757 млн ₽; отрицательный итог формируется ниже операционной линии</h2>
-      <p class="lead reveal">За девять месяцев выручка составила 24,278 млн ₽. Операционные затраты МДО вместе с аллокацией — 21,522 млн ₽, поэтому результат до выплат учредителям и инвестиционных платежей остается положительным.</p>
+      <p class="eyebrow reveal">Данные Финдепа · январь — июнь 2026</p>
+      <h2 class="reveal">Финансовый срез МДО за первое полугодие: выручка, расходы и инвестиционные строки по месяцам</h2>
+      <p class="lead reveal">Финдеп отдельно показывает затраты 66bit и прочую инвестиционную разработку. В расходы МДО входят прямые затраты и строка «Разработка МДО». Итог включает все строки таблицы.</p>
       <div class="kpis">
-        <article class="panel reveal"><div class="metric-value">24,278 млн ₽</div><div class="metric-label">выручка · октябрь 2025 — июнь 2026</div></article>
-        <article class="panel peach reveal" style="--delay: 60ms"><div class="metric-value">21,522 млн ₽</div><div class="metric-label">операционные затраты вместе с аллокацией</div></article>
-        <article class="panel dark reveal" style="--delay: 120ms"><div class="metric-value">+2,757 млн ₽</div><div class="metric-label muted">результат до инвестиций · операционная маржа 11,4%</div></article>
-        <article class="panel reveal" style="--delay: 180ms"><div class="metric-value">155 тыс. ₽</div><div class="metric-label">аллокация ГК · 0,7% операционных затрат</div></article>
+        <article class="panel reveal"><div class="metric-value">14,011 млн ₽</div><div class="metric-label">выручка · январь–июнь 2026</div></article>
+        <article class="panel peach reveal" style="--delay: 60ms"><div class="metric-value">15,664 млн ₽</div><div class="metric-label">расходы МДО, включая разработку МДО</div></article>
+        <article class="panel reveal" style="--delay: 120ms"><div class="metric-value">87 тыс. ₽</div><div class="metric-label">аллокация ГК за январь–июнь 2026</div></article>
+        <article class="panel dark reveal" style="--delay: 180ms"><div class="metric-value">−8,116 млн ₽</div><div class="metric-label muted">итог после 66bit и прочей инвестиционной разработки</div></article>
       </div>
 
-      <div class="economy-grid" style="margin-block-start: 18px">
-        <article class="panel reveal">
-          <p class="eyebrow">Текущий срез · июнь 2026</p>
-          <div class="answer-list">
-            <div class="answer-row"><dt>Выручка</dt><dd>2,751 млн ₽</dd></div>
-            <div class="answer-row"><dt>Операционные затраты МДО</dt><dd>1,404 млн ₽, включая строку разработки МДО</dd></div>
-            <div class="answer-row"><dt>Аллокация ГК</dt><dd>34 тыс. ₽</dd></div>
-            <div class="answer-row"><dt>Результат до инвестиций</dt><dd><strong>+1,312 млн ₽</strong></dd></div>
-            <div class="answer-row"><dt>Платеж 66bit</dt><dd>1,189 млн ₽</dd></div>
-            <div class="answer-row"><dt>Результат после всего</dt><dd><strong>+123 тыс. ₽</strong></dd></div>
+      <article class="panel dark reveal" style="margin-block-start: 18px">
+        <h3>Помесячный срез Финдепа, млн ₽</h3>
+        <p class="muted">Итог = выручка − прямые расходы МДО − разработка МДО − аллокация − 66bit − прочая инвестиционная разработка.</p>
+        <div class="acquisition-scroll" role="region" aria-label="Финансовые показатели МДО по месяцам с января по июнь 2026" tabindex="0">
+          <div class="finance-monthly-table">
+            <div class="finance-monthly-row head"><span>Месяц</span><span>Выручка</span><span>Прямые расходы</span><span>Разработка МДО</span><span>Аллокация</span><span>66bit / РЦ</span><span>Прочая инвест. разработка</span><span>Итог</span></div>
+            <div class="finance-monthly-row"><span>Янв.</span><span>2,187</span><span>0,674</span><span>1,166</span><span>0</span><span>0,595</span><span>0</span><span>−0,246</span></div>
+            <div class="finance-monthly-row"><span>Фев.</span><span>3,223</span><span>0,363</span><span>1,138</span><span>0,002</span><span>0</span><span>0</span><span>+1,720</span></div>
+            <div class="finance-monthly-row"><span>Мар.</span><span>2,282</span><span>1,057</span><span>1,220</span><span>0,003</span><span>0</span><span>0</span><span>+0,003</span></div>
+            <div class="finance-monthly-row"><span>Апр.</span><span>1,195</span><span>0,830</span><span>1,163</span><span>0,030</span><span>0,595</span><span>0</span><span>−1,423</span></div>
+            <div class="finance-monthly-row"><span>Май</span><span>2,372</span><span>5,720</span><span>0,930</span><span>0,018</span><span>0</span><span>3,997</span><span>−8,292</span></div>
+            <div class="finance-monthly-row"><span>Июнь</span><span>2,751</span><span>0,241</span><span>1,163</span><span>0,034</span><span>1,189</span><span>0</span><span>+0,123</span></div>
+            <div class="finance-monthly-row total"><span>Итого</span><span>14,011</span><span>8,885</span><span>6,779</span><span>0,087</span><span>2,378</span><span>3,997</span><span>−8,116</span></div>
           </div>
-        </article>
-        <article class="panel dark reveal" style="--delay: 100ms">
-          <p class="eyebrow">Что меняет итог за период</p>
-          <div class="answer-list">
-            <div class="answer-row"><dt>Операционный результат</dt><dd><strong>+2,757 млн ₽</strong></dd></div>
-            <div class="answer-row"><dt>Выплаты учредителям</dt><dd>−6,035 млн ₽</dd></div>
-            <div class="answer-row"><dt>66bit</dt><dd>−2,378 млн ₽</dd></div>
-            <div class="answer-row"><dt>Прочая инвестиционная разработка</dt><dd>−3,997 млн ₽</dd></div>
-            <div class="answer-row"><dt>Результат после всего</dt><dd><strong>−9,654 млн ₽</strong></dd></div>
-          </div>
-        </article>
-      </div>
+        </div>
+      </article>
 
       <div class="metrics" style="margin-block-start: 18px">
-        <article class="panel orange reveal"><div class="metric-value">3,964 млн ₽</div><div class="metric-label">общая стоимость разработки РЦ</div></article>
-        <article class="panel reveal" style="--delay: 70ms"><div class="metric-value">2,378 млн ₽ · 60%</div><div class="metric-label">платежи 66bit, отраженные Финдепом по июнь</div></article>
-        <article class="panel peach reveal" style="--delay: 140ms"><div class="metric-value">1,585 млн ₽ · 40%</div><div class="metric-label">остаток бюджета РЦ по заданной общей стоимости</div></article>
+        <article class="panel orange reveal"><div class="metric-value">3,964 млн ₽</div><div class="metric-label">согласованная общая стоимость разработки РЦ</div></article>
+        <article class="panel reveal" style="--delay: 70ms"><div class="metric-value">2,378 млн ₽ · 60%</div><div class="metric-label">платежи 66bit по проекту РЦ, отраженные по июнь</div></article>
+        <article class="panel peach reveal" style="--delay: 140ms"><div class="metric-value">1,585 млн ₽ · 40%</div><div class="metric-label">остаток бюджета РЦ от согласованной стоимости</div></article>
       </div>
 
-      <div class="fact-note reveal"><strong>Аллокация не объясняет отрицательный итог:</strong> она уменьшает результат периода только на 155 тыс. ₽. Основной эффект дают выплаты учредителям и инвестиционная разработка, которые вынесены ниже операционной линии.</div>
-      <div class="fact-note reveal"><strong>Движение денег не равно расходу:</strong> в июньской детализации есть 9 внутренних переводов на 6,019 млн ₽. Они могут менять остатки на счетах, но Финдеп корректно исключил их из P&amp;L. Количество отдельных выплат учредителям сводный лист не раскрывает — подтверждена только общая сумма 6,035 млн ₽.</div>
-      <div class="source">Источник: отчет Финдепа «Аллокация_с_ГК на июнь2026.xlsx», листы «Лист1», «Детализация_июнь» и «Проверки». Точная онлайн-копия в Google Drive не найдена, поэтому ссылка не подменена другим документом. Строка «Разработка МДО» за июнь — 1,163 млн ₽ — помечена Финдепом как CHECK; июньский результат следует считать предварительным до подтверждения табелем или CF.</div>
+      <div class="source">Источники: отчет Финдепа «Аллокация_с_ГК на июнь2026.xlsx», листы «Лист1», «Детализация_июнь» и «Проверки»; выручка июня — <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1404717816" target="_blank" rel="noreferrer">Мегатаблица · «Аккаунты»</a>. Строка «Прочая инвестиционная разработка» 3,997 млн ₽ не расшифрована в своде Финдепа. «Разработка МДО» за июнь 1,163 млн ₽ имеет статус CHECK и требует подтверждения табелем или CF.</div>
     </div>
   </section>
 
   <section class="section" id="sales-churn">
     <div class="shell">
-      <p class="eyebrow reveal">Продажи и отвалы · годовой и текущий срез</p>
-      <h2 class="reveal">Полный 2025 год и текущий результат января–июля 2026</h2>
-      <p class="lead reveal">Периоды разной длины: 2025 показан за январь–декабрь, 2026 — по состоянию на 17 июля. Это сравнение накопленного результата, а не темпа за одинаковое число месяцев.</p>
+      <p class="eyebrow reveal">Продажи, новые клиенты, апсейлы и отвалы</p>
+      <h2 class="reveal">Отдельный учет новых продаж, новых клиентов и апсейлов</h2>
+      <p class="lead reveal">2025 показан за январь–декабрь, 2026 по состоянию на 17 июля. «Новая продажа» означает отдельную строку во вкладке оплат. «Новый клиент» означает первую коммерческую дату уникальной сущности в админке.</p>
       <div class="economy-grid">
         <article class="panel reveal">
           <h3>Январь–декабрь 2025</h3>
-          <div class="compare"><span>Новые клиенты</span><span class="compare-track"><span class="compare-fill" style="--fill: 100%"></span></span><span class="compare-value">13</span></div>
-          <div class="compare"><span>Годовой тариф новых</span><span class="compare-track"><span class="compare-fill" style="--fill: 100%"></span></span><span class="compare-value">4,604</span></div>
-          <div class="compare"><span>Подтверждённые отвалы</span><span class="compare-track"><span class="compare-fill" style="--fill: 100%"></span></span><span class="compare-value">5</span></div>
-          <div class="compare"><span>Потерянный годовой тариф</span><span class="compare-track"><span class="compare-fill" style="--fill: 100%"></span></span><span class="compare-value">0,903</span></div>
+          <div class="answer-list">
+            <div class="answer-row"><dt>Новые продажи</dt><dd><strong>19 записей</strong> · 16 компаний в сверке оплат</dd></div>
+            <div class="answer-row"><dt>Новые клиенты</dt><dd><strong>13 клиентов</strong> после дедупликации по админке</dd></div>
+            <div class="answer-row"><dt>ARR новых клиентов</dt><dd><strong>4,604 млн ₽ в год</strong> · совокупный текущий MRR когорты × 12</dd></div>
+            <div class="answer-row"><dt>Отвалы</dt><dd><strong>8 клиентов</strong></dd></div>
+            <div class="answer-row"><dt>Потерянная выручка</dt><dd><strong>369 тыс. ₽</strong> за оставшийся неоплаченный период 2025</dd></div>
+          </div>
         </article>
         <article class="panel peach reveal" style="--delay: 100ms">
           <h3>Январь–17 июля 2026</h3>
-          <div class="compare alt"><span>Новые клиенты</span><span class="compare-track"><span class="compare-fill" style="--fill: 38%"></span></span><span class="compare-value">5</span></div>
-          <div class="compare alt"><span>Годовой тариф новых</span><span class="compare-track"><span class="compare-fill" style="--fill: 26%"></span></span><span class="compare-value">1,214</span></div>
-          <div class="compare alt"><span>Подтверждённые отвалы</span><span class="compare-track"><span class="compare-fill" style="--fill: 100%"></span></span><span class="compare-value">5</span></div>
-          <div class="compare alt"><span>Потерянный годовой тариф</span><span class="compare-track"><span class="compare-fill" style="--fill: 92%"></span></span><span class="compare-value">0,831</span></div>
+          <div class="answer-list">
+            <div class="answer-row"><dt>Новые продажи</dt><dd><strong>6 записей</strong> · 6 компаний в сверке оплат</dd></div>
+            <div class="answer-row"><dt>Новые клиенты</dt><dd><strong>5 клиентов</strong> после дедупликации по админке</dd></div>
+            <div class="answer-row"><dt>ARR новых клиентов</dt><dd><strong>1,214 млн ₽ в год</strong> · совокупный текущий MRR когорты × 12</dd></div>
+            <div class="answer-row"><dt>Апсейлы</dt><dd><strong>14 операций</strong> у 9 компаний · подтвержденный прирост <strong>102,7 тыс. ₽ MRR</strong></dd></div>
+            <div class="answer-row"><dt>Отвалы</dt><dd><strong>5 клиентов</strong> · расчетная потеря к 17.07 — <strong>≈404 тыс. ₽</strong></dd></div>
+          </div>
         </article>
       </div>
-      <div class="metrics" style="margin-block-start: 18px">
-        <article class="panel reveal"><div class="metric-value">13 → 5</div><div class="metric-label">новые клиенты: полный 2025 → текущий 2026</div></article>
-        <article class="panel peach reveal" style="--delay: 70ms"><div class="metric-value">5 → 5</div><div class="metric-label">подтверждённые отвалы: полный 2025 → текущий 2026</div></article>
-        <article class="panel dark reveal" style="--delay: 140ms"><div class="metric-value">3,70 → 0,38</div><div class="metric-label muted">млн ₽ чистого годового тарифа после churn; 2026 год еще не завершен</div></article>
+      <div class="kpis" style="margin-block-start: 18px">
+        <article class="panel reveal"><div class="metric-value">19 → 6</div><div class="metric-label">записи новых продаж: полный 2025 → текущий 2026</div></article>
+        <article class="panel reveal" style="--delay: 50ms"><div class="metric-value">13 → 5</div><div class="metric-label">уникальные новые клиенты: полный 2025 → текущий 2026</div></article>
+        <article class="panel peach reveal" style="--delay: 100ms"><div class="metric-value">8 → 5</div><div class="metric-label">отвалы: полный 2025 → текущий 2026</div></article>
+        <article class="panel dark reveal" style="--delay: 150ms"><div class="metric-value">+102,7 тыс. ₽</div><div class="metric-label muted">подтвержденный прирост MRR от апсейлов 2026</div></article>
       </div>
-      <div class="source">Источники: продажи — <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица МДО · вкладка «Клиенты»</a>; churn — <a href="https://docs.google.com/spreadsheets/d/1vMyiuGBAvD8DDQ4z1xLsmZS4cGe8DP8bGGXQjia8hvA/edit?gid=729265529#gid=729265529" target="_blank" rel="noreferrer">«Продление» · вкладка «Отвал клиентов»</a>, проверено 17.07.2026. В churn включены только строки с заполненной датой отключения; потерянный годовой тариф равен сумме годовых лицензий из источника. Чистый годовой тариф = тариф новых клиентов − потерянный тариф.</div>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1140973403&amp;range=A176:K265" target="_blank" rel="noreferrer">Мегатаблица · «Оплаты (для сверки)»</a> — новые продажи и апсейлы; <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=81449564&amp;range=A1:AT517" target="_blank" rel="noreferrer">«Клиенты»</a> — уникальные клиенты и ARR; <a href="https://docs.google.com/spreadsheets/d/1vMyiuGBAvD8DDQ4z1xLsmZS4cGe8DP8bGGXQjia8hvA/edit?gid=729265529#gid=729265529" target="_blank" rel="noreferrer">«Продление» · «Отвал клиентов»</a> — даты и лицензии churn. Для 2026 год восстановлен по хронологии строк и месяцу оплаты в колонке I; у 3 из 14 апсейлов числовой прирост не заполнен и в сумму не включен. Показатель 2025 «8 клиентов / 369 тыс. ₽» принят по управленческой сверке владельца; в текущем онлайн-реестре видны 5 из 8 строк, поэтому реестр нужно дополнить. Потеря 2026 рассчитана пропорционально дням от даты отключения до 17.07.2026.</div>
     </div>
   </section>
 
@@ -1157,29 +1183,6 @@
   </section>
 
   <section class="section">
-    <div class="shell">
-      <p class="eyebrow reveal">Экономика робота</p>
-      <h2 class="reveal">Текущий робот экономически укладывается в тариф</h2>
-      <div class="economy-grid">
-        <article class="panel reveal">
-          <h3>Средний фактический клиент</h3>
-          <div class="economy-main"><strong data-counter="923">0</strong><span>минут / месяц</span></div>
-          <p class="muted">8,1 тыс. помещений · 1,85 тыс. ₽ переменной себестоимости при 2 ₽/мин.</p>
-          <div class="stress"><h3>Тариф сервисной УК</h3><div class="metric-value">44–55 тыс. ₽</div><p class="muted">8–10 тыс. ЛС × 5,5 ₽</p></div>
-        </article>
-        <article class="panel dark reveal" style="--delay: 100ms">
-          <h3>Нагрузка робота на тариф</h3>
-          <div class="economy-main"><strong data-counter="4" data-prefix="3–" data-suffix="%">0</strong></div>
-          <p class="muted">при фактической интенсивности</p>
-          <div class="stress"><div class="metric-value">22–27%</div><p class="muted">стресс-сценарий: 6 000 минут = 12 тыс. ₽</p></div>
-        </article>
-      </div>
-      <div class="fact-note reveal">Расчет относится к действующему роботу. Экономика консультирующей AI-версии будет считаться отдельно: стек, точность, поддержка и полный TCO до голосового пилота.</div>
-      <div class="source">Срез: 105 внешних диспетчерских с активностью ≥10 минут, апрель 2026. Контекст гипотезы: <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">исследование МДО 2026</a>. Это не прибыль: полная P&amp;L дополнительно включает поддержку, инфраструктуру, разработку и налоги.</div>
-    </div>
-  </section>
-
-  <section class="section">
       <div class="shell">
       <p class="eyebrow reveal">Расчетный центр · текущая ситуация</p>
       <h2 class="reveal">Готов MVP, добавлены новые тарифы, платящий клиент МДО вошел в пилотный контур РЦ</h2>
@@ -1213,50 +1216,34 @@
       <div class="section-head reveal" style="margin-block-start: 52px">
         <div>
           <p class="eyebrow">Фактическая экономика действующей базы</p>
-          <h3>159 клиентов принесли 83,8 млн ₽ выручки за последние 36 закрытых месяцев</h3>
+          <h3>Единый горизонт LTV — 36 закрытых месяцев действующей клиентской базы</h3>
         </div>
-        <p class="lead">Период расчета: июль 2023 — июнь 2026. Выручка распределена по месяцам оказания услуг; незакрытый июль 2026 в расчет не входит.</p>
+        <p class="lead">Период расчета выручки: июль 2023 — июнь 2026. Незакрытый июль 2026 не входит; средний срок сотрудничества рассчитан отдельно по датам первой оплаты или запуска.</p>
       </div>
 
-      <div class="ltv-strip reveal" aria-label="Фактическая экономика действующей клиентской базы за 36 месяцев">
+      <div class="ltv-strip reveal" aria-label="Фактическая экономика действующей клиентской базы">
         <div class="ltv-item"><strong>159</strong><span>действующих клиентов по статусу в Мегатаблице</span></div>
-        <div class="ltv-item"><strong>83,8 млн ₽</strong><span>выручка действующей базы за июль 2023 — июнь 2026</span></div>
-        <div class="ltv-item"><strong>527 тыс. ₽</strong><span>средняя выручка на клиента за 36 месяцев</span></div>
-        <div class="ltv-item"><strong>290 тыс. ₽</strong><span>gross-profit LTV на клиента при валовой марже 55%</span></div>
+        <div class="ltv-item"><strong>527 тыс. ₽</strong><span>LTV выручки на клиента за единый горизонт 36 месяцев</span></div>
+        <div class="ltv-item"><strong>290 тыс. ₽</strong><span>валовая прибыль LTV на клиента при валовой марже 55%</span></div>
+        <div class="ltv-item"><strong>50,6 мес.</strong><span>средний срок сотрудничества действующей базы; дата есть у 158 из 159 клиентов</span></div>
       </div>
 
-      <div class="economy-grid" style="margin-block-start: 18px">
-        <article class="panel reveal">
-          <h3>Расчет LTV действующей базы</h3>
-          <div class="answer-list">
-            <div class="answer-row"><dt>Горизонт</dt><dd>36 месяцев · 01.07.2023–30.06.2026</dd></div>
-            <div class="answer-row"><dt>Revenue LTV</dt><dd>83,791 млн ₽ / 159 = <strong>527 тыс. ₽</strong></dd></div>
-            <div class="answer-row"><dt>Средняя выручка</dt><dd>175,7 тыс. ₽ в год · 14,6 тыс. ₽ в месяц</dd></div>
-            <div class="answer-row"><dt>Gross-profit LTV</dt><dd>527 тыс. ₽ × 55% = <strong>290 тыс. ₽</strong></dd></div>
+      <article class="panel dark reveal" style="margin-block-start: 18px">
+        <h3>Расчетный CAC за июнь 2026</h3>
+        <p class="muted">Payback рассчитан через валовую прибыль: CAC / (ARPU × 55%). Затраты канала РЦ сохранены в общем расчете, но продаж РЦ в июне не было.</p>
+        <div class="acquisition-scroll" role="region" aria-label="Экономика привлечения по каналам за июнь 2026" tabindex="0">
+          <div class="acquisition-table">
+            <div class="acquisition-row head"><span>Канал</span><span>Новые клиенты</span><span>CAC</span><span>ARPU / мес.</span><span>Payback</span></div>
+            <div class="acquisition-row"><span>Холодные продажи</span><span>1,58</span><span>39,6 тыс. ₽</span><span>21,0 тыс. ₽</span><span>3,4 мес.</span></div>
+            <div class="acquisition-row"><span>Агентский канал</span><span>1,00</span><span>65,6 тыс. ₽</span><span>21,6 тыс. ₽</span><span>5,5 мес.</span></div>
+            <div class="acquisition-row"><span>Расчетный центр</span><span>0</span><span>—</span><span>0 ₽</span><span>—</span></div>
+            <div class="acquisition-row total"><span>Общий расчет</span><span>2,58</span><span>70,0 тыс. ₽</span><span>21,2 тыс. ₽</span><span>6,0 мес.</span></div>
           </div>
-          <div class="stress">
-            <div class="metric-value">5,7×</div>
-            <p class="muted">gross-profit LTV / общий расчетный CAC. LTV основан на факте базы; CAC — на текущей модели каналов.</p>
-          </div>
-        </article>
+        </div>
+        <p class="muted" style="margin-block: 18px 0">При нуле клиентов CAC и payback канала РЦ математически не определяются. Его расходы 52,6 тыс. ₽ включены в общие расходы июня 180,7 тыс. ₽.</p>
+      </article>
 
-        <article class="panel dark reveal" style="--delay: 100ms">
-          <h3>Текущий расчет CAC и payback по каналам</h3>
-          <p class="muted">Payback рассчитан через валовую прибыль: CAC / (ARPU × 55%).</p>
-          <div class="acquisition-scroll" role="region" aria-label="Экономика привлечения по каналам" tabindex="0">
-            <div class="acquisition-table">
-              <div class="acquisition-row head"><span>Канал</span><span>CAC</span><span>ARPU / мес.</span><span>Payback</span></div>
-              <div class="acquisition-row"><span>Холодные продажи</span><span>39,6 тыс. ₽</span><span>21,0 тыс. ₽</span><span>3,4 мес.</span></div>
-              <div class="acquisition-row"><span>Агентский канал</span><span>65,6 тыс. ₽</span><span>21,6 тыс. ₽</span><span>5,5 мес.</span></div>
-              <div class="acquisition-row"><span>Расчетные центры</span><span>52,6 тыс. ₽</span><span>18,0 тыс. ₽</span><span>5,3 мес.</span></div>
-              <div class="acquisition-row total"><span>Общий расчет</span><span>50,5 тыс. ₽</span><span>20,2 тыс. ₽</span><span>4,5 мес.</span></div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="fact-note reveal"><strong>Вывод:</strong> при текущих допущениях трехлетняя валовая прибыль действующего клиента в 5,7 раза превышает расчетную стоимость привлечения. Команда должна подтвердить CAC и payback накопленным фактом по каждому каналу.</div>
-      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=81449564&range=B2:G517" target="_blank" rel="noreferrer">Мегатаблица · действующие клиенты</a> · <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1040110318&range=DD1:EM10484" target="_blank" rel="noreferrer">Мегатаблица · выручка за 36 месяцев</a> · <a href="https://docs.google.com/spreadsheets/d/1eXuPYSERxftlz7CcDAXYeiaycfVbd6nc5InQsXvTRi0/edit" target="_blank" rel="noreferrer">расчет CAC по каналам</a> · <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта и валовая маржа</a>. Выручка базы: 83,791 млн ₽; LTV: 83,791 млн ₽ / 159 = 527 тыс. ₽; gross-profit LTV: 527 тыс. ₽ × 55% = 290 тыс. ₽.</div>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=81449564&amp;range=A1:AT517" target="_blank" rel="noreferrer">Мегатаблица · действующие клиенты и даты запуска</a> · <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1040110318&amp;range=DD1:EM10484" target="_blank" rel="noreferrer">выручка за 36 месяцев</a> · <a href="https://docs.google.com/spreadsheets/d/1eXuPYSERxftlz7CcDAXYeiaycfVbd6nc5InQsXvTRi0/edit" target="_blank" rel="noreferrer">CAC по каналам</a> · <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">валовая маржа</a>. LTV выручки: 83,791 млн ₽ / 159 = 527 тыс. ₽; валовая прибыль LTV: 527 тыс. ₽ × 55% = 290 тыс. ₽. Общий CAC июня: 180,7 тыс. ₽ / 2,58 = 70,0 тыс. ₽; payback: 70,0 / (21,2 × 55%) = 6,0 месяца.</div>
     </div>
   </section>
 
@@ -1304,7 +1291,7 @@
         <article class="panel bsc-module reveal" style="--delay: 180ms">
           <div class="bsc-module-head"><h3>Клиенты и рынок</h3><span class="bsc-module-index">04</span></div>
           <div class="bsc-metrics">
-            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Новые продажи и полный churn</h4><p>Количество новых клиентов и годовой тариф; количество полностью ушедших клиентов и потерянный годовой тариф. Смена тарифа не является churn.</p><span class="metric-owner">Продажи — Амосов; удержание — Скоробогатов · ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Новые продажи и полный churn</h4><p>Команда считает новых клиентов и совокупный ARR их текущих тарифов. Для полностью ушедших клиентов команда считает потерянную выручку за неоплаченный период. Смена тарифа не входит в churn.</p><span class="metric-owner">Продажи — Амосов; удержание — Скоробогатов · ежемесячно</span></div></div>
             <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Риск оттока и потенциал апсейла</h4><p>Изменение использования робота и диспетчерской относительно предыдущих трех месяцев запускает работу аккаунта.</p><span class="metric-owner">Скоробогатов + аккаунт-менеджер</span></div></div>
             <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Уникальные жители МДО</h4><p>Один профиль жителя в админке независимо от канала — мобильное приложение или MAX. Дубли между каналами не возникают.</p><span class="metric-owner">Методика — Сайдулин; качество данных — Скоробогатов · ежемесячно</span></div></div>
           </div>
@@ -1336,11 +1323,11 @@
   <section class="section">
       <div class="shell">
       <p class="eyebrow reveal">KPI 2026</p>
-      <h2 class="reveal">Статус KPI 2026: что близко к цели, что в работе и что нужно пересмотреть</h2>
+      <h2 class="reveal">KPI 2026: обновленная цель и реалистичный прогноз продаж</h2>
       <div class="kpis">
-        <article class="panel peach reveal"><span class="kpi-verdict">Требует пересмотра</span><h3>Выручка</h3><div class="kpi-target">45 млн ₽</div><div class="kpi-status">H1 16,42 млн ₽ · текущий темп ≈32,84 млн ₽/год</div></article>
+        <article class="panel peach reveal"><span class="kpi-verdict">Цель пересмотрена</span><h3>Выручка</h3><div class="kpi-target">42,4 млн ₽</div><div class="kpi-status">порог выполнения 33,9 млн ₽ = 80% цели · план включает холодные и агентские продажи, а также продажи РЦ</div></article>
         <article class="panel reveal" style="--delay: 50ms"><span class="kpi-verdict good">Близко к цели</span><h3>MRR</h3><div class="kpi-target">2,95 млн ₽</div><div class="kpi-status">факт 2,803 млн ₽ · 95% · регулярные начисления, не поступления</div></article>
-        <article class="panel peach reveal" style="--delay: 100ms"><span class="kpi-verdict">Требует пересмотра</span><h3>Новые клиенты</h3><div class="kpi-target">40</div><div class="kpi-status">факт 5 · осталось 35, или ≈6,4 клиента/мес.</div></article>
+        <article class="panel peach reveal" style="--delay: 100ms"><span class="kpi-verdict">Прогноз пересмотрен</span><h3>Количество новых клиентов</h3><div class="kpi-target">≈11–16</div><div class="kpi-status">прогноз на год: факт 5 + 1–2 новых клиента в месяц при одном менеджере продаж</div></article>
         <article class="panel reveal" style="--delay: 150ms"><span class="kpi-verdict good">Единый профиль</span><h3>Уникальные жители, подключенные к МДО</h3><div class="kpi-target">90 тыс.</div><div class="kpi-status">один житель в админке независимо от канала: МП или MAX</div></article>
         <article class="panel reveal"><span class="kpi-verdict good">Цель подтверждена базой</span><h3>Валовая маржа</h3><div class="kpi-target">≥50%</div><div class="kpi-status">база 2025: ≈55%</div></article>
         <article class="panel dark reveal" style="--delay: 50ms"><span class="kpi-verdict">Контрольная дата</span><h3>Расчетный центр</h3><div class="kpi-target">10.09.26</div><div class="kpi-status">контроль пилотной готовности, не полный production</div></article>
@@ -1374,8 +1361,8 @@
           <h3>Бизнес и финансы</h3>
           <dl class="answer-list">
             <div class="answer-row"><dt>Почему не выполнен план 2025?<span class="asked-by">Михаил Бабкин · Елена Корецкая · Оксана Погодаева</span></dt><dd>План 40,0 млн ₽, факт 32,742 млн ₽, разрыв 7,258 млн ₽; около пяти месяцев без устойчивого контура продаж.</dd></div>
-            <div class="answer-row"><dt>Прибыль до и после аллокации?<span class="asked-by">Эдуард Гроде · Елена Корецкая</span></dt><dd>Аллокация мала относительно OPEX и не объясняет убыток. Инвестиции и выплаты находятся ниже операционной линии.</dd></div>
-            <div class="answer-row"><dt>Что дает найм продаж?<span class="asked-by">Эдуард Гроде</span></dt><dd>По текущей модели общий CAC — 50,5 тыс. ₽, payback по валовой прибыли — 4,5 месяца; по каналам — от 3,4 до 5,5 месяца. Это расчетная экономика, которую нужно подтвердить накопленным фактом продаж.</dd></div>
+            <div class="answer-row"><dt>Финансовый результат и аллокация?<span class="asked-by">Эдуард Гроде · Елена Корецкая</span></dt><dd>Январь–июнь 2026: выручка 14,011 млн ₽; расходы МДО с разработкой 15,664 млн ₽; аллокация ГК 87 тыс. ₽. После отдельных затрат 66bit 2,378 млн ₽ и прочей инвестиционной разработки 3,997 млн ₽ итог составляет −8,116 млн ₽.</dd></div>
+            <div class="answer-row"><dt>Что показывает экономика продаж?<span class="asked-by">Эдуард Гроде</span></dt><dd>Модель июня: общий CAC составляет 70,0 тыс. ₽, payback по валовой прибыли — 6,0 месяца. Модель учитывает 2,58 клиента в холодном и агентском каналах. Продаж РЦ в июне не было, но 52,6 тыс. ₽ расходов канала входят в общий CAC.</dd></div>
             <div class="answer-row"><dt>Почему без капитализации?<span class="asked-by">Иван Клевцов</span></dt><dd>Это решение учредителей. Операционная стратегия отвечает за выручку, маржу, churn и окупаемость.</dd></div>
           </dl>
         </article>
