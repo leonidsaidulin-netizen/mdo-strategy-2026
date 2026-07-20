@@ -1244,7 +1244,7 @@
         <article class="panel dark reveal" style="--delay: 180ms"><div class="metric-value" style="font-size: clamp(1.8rem, 2.6vw, 2.35rem)">≈36–80&nbsp;млн&nbsp;₽</div><div class="metric-label muted">верхняя граница иллюстративного стоимостного ориентира для +119 тыс. пользователей, не оценка капитализации МДО</div></article>
       </div>
 
-      <div class="fact-note reveal">53 тыс. — это валовые активации через MAX, а не итоговая уникальная база. После учета пересечения MAX дает около 40 тыс. новых уникальных жителей за 12 месяцев. Вместе с текущими 40 тыс. это около 80 тыс.; оставшиеся 10 тыс. до KPI 90 тыс. должны прийти из новых клиентов и органического роста мобильного приложения.</div>
+      <div class="fact-note reveal">53 тыс. — это валовые активации через MAX, а не итоговая уникальная база. После учета пересечения MAX дает около 40 тыс. новых уникальных жителей за 12 месяцев. Вместе с текущими 40 тыс. это около 80 тыс.; вклад новых клиентов, приобретающих РЦ, рассчитан отдельно в блоке ниже и потенциально закрывает разрыв до KPI 90 тыс.</div>
       <div class="source">Внутренние данные: интервью и операционный статус продукта и техподдержки на 20.07.2026. Внешний ориентир: <a href="https://www.interfax.ru/business/1025082" target="_blank" rel="noreferrer">«Яндекс» приобрел 100% Domiland</a>; <a href="https://psksolutions.ru/media/yandeks-upravdom-zachem-kompaniya-kupila-proptech-platformu-domilend/" target="_blank" rel="noreferrer">оценка сделки 300–675 млн ₽ и аудитория более 1 млн жителей</a>. Условия сделки официально не раскрывались, поэтому ориентир до ≈300–675 ₽ на пользователя используется только как иллюстративный рыночный диапазон.</div>
     </div>
   </section>
@@ -1281,6 +1281,55 @@
       </div>
       <div class="fact-note reveal">Критерий готовности: расчет сходится, расхождения объяснимы, квитанции проверены, клиент подтверждает методику. Дата 10 сентября — контроль пилотной готовности, а не обещание полного production.</div>
       <div class="source">Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">roadmap РЦ и стратегическая карта МДО 2026</a>.</div>
+    </div>
+  </section>
+
+  <section class="section" id="rc-economics">
+    <div class="shell">
+      <p class="eyebrow reveal">РЦ · сценарий масштабирования</p>
+      <h2 class="reveal">30% новых клиентов с РЦ создают два результата: регулярную выручку и рост уникальной базы жителей</h2>
+      <p class="lead reveal">Это сценарий, а не подтвержденный прогноз продаж. Расчет использует текущий годовой прогноз 11–16 новых клиентов МДО, полный тариф РЦ 40 ₽ за лицевой счет в месяц и единый учет жителя без сложения мобильного приложения и MAX.</p>
+
+      <div class="kpis">
+        <article class="panel reveal"><div class="metric-value">11–16</div><div class="metric-label">новых клиентов МДО в год · текущий прогноз</div></article>
+        <article class="panel peach reveal" style="--delay: 60ms"><div class="metric-value">30%</div><div class="metric-label">доля новых клиентов, приобретающих РЦ · гипотеза</div></article>
+        <article class="panel reveal" style="--delay: 120ms"><div class="metric-value" style="font-size: clamp(2rem, 3vw, 2.8rem)">≈3–5&nbsp;УК</div><div class="metric-label">новых клиентов РЦ в год · 11–16 × 30%</div></article>
+        <article class="panel dark reveal" style="--delay: 180ms"><div class="metric-value" style="font-size: clamp(1.8rem, 2.6vw, 2.35rem)">≈10–14&nbsp;УК</div><div class="metric-label muted">клиентская база РЦ через три года при сохранении темпа</div></article>
+      </div>
+
+      <div class="economy-grid" style="margin-block-start: 18px">
+        <article class="panel reveal">
+          <h3>Потенциальная выручка РЦ</h3>
+          <dl class="answer-list">
+            <div class="answer-row"><dt>Средний масштаб клиента</dt><dd><strong>6 тыс. лицевых счетов</strong> · сценарное допущение</dd></div>
+            <div class="answer-row"><dt>Полный тариф РЦ</dt><dd><strong>40 ₽ / ЛС в месяц</strong></dd></div>
+            <div class="answer-row"><dt>Годовая стоимость РЦ для одной УК</dt><dd><strong>2,88 млн ₽ ARR</strong> · 6 000 × 40 ₽ × 12</dd></div>
+            <div class="answer-row"><dt>Новый ARR годовой когорты</dt><dd><strong>9,5–13,8 млн ₽</strong> · при 3,3–4,8 клиента РЦ</dd></div>
+            <div class="answer-row"><dt>ARR РЦ к концу третьего года</dt><dd><strong>28,5–41,5 млн ₽</strong> · годовой темп на накопленной базе, не выручка за три года</dd></div>
+          </dl>
+        </article>
+
+        <article class="panel peach reveal" style="--delay: 100ms">
+          <h3>Потенциальный рост уникальных жителей</h3>
+          <dl class="answer-list">
+            <div class="answer-row"><dt>Расчетная база на одну УК</dt><dd><strong>6 тыс.</strong> · для сценария принято 1 активированный аккаунт на ЛС</dd></div>
+            <div class="answer-row"><dt>Активация в MAX</dt><dd><strong>80%</strong> · гипотеза для комплексного предложения</dd></div>
+            <div class="answer-row"><dt>Уникальных жителей на одну УК</dt><dd><strong>4,8 тыс.</strong> · без повторного учета тех же жителей в МП</dd></div>
+            <div class="answer-row"><dt>Прирост за год</dt><dd><strong>15,8–23,0 тыс.</strong> уникальных жителей</dd></div>
+            <div class="answer-row"><dt>Прирост за три года</dt><dd><strong>47,5–69,1 тыс.</strong> уникальных жителей при сохранении темпа</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <div class="kpis" style="margin-block-start: 18px">
+        <article class="panel dark reveal"><div class="metric-value" style="font-size: clamp(1.8rem, 2.6vw, 2.35rem)">47,5–69,1&nbsp;млн&nbsp;₽</div><div class="metric-label muted">внутренняя чувствительность при 1 000 ₽ за пользователя · не подтвержденная рынком оценка</div></article>
+        <article class="panel reveal" style="--delay: 80ms"><div class="metric-value" style="font-size: clamp(1.8rem, 2.6vw, 2.35rem)">≈14–47&nbsp;млн&nbsp;₽</div><div class="metric-label">иллюстративный диапазон по публичному ориентиру 300–675 ₽ за пользователя</div></article>
+        <article class="panel peach reveal" style="--delay: 160ms"><div class="metric-value">3,964&nbsp;млн&nbsp;₽</div><div class="metric-label">согласованная стоимость разработки РЦ · инвестиция в продукт, не автоматическая прибавка к оценке бизнеса</div></article>
+        <article class="panel reveal" style="--delay: 240ms"><div class="metric-value">0 дублей</div><div class="metric-label">МП и MAX — каналы одного жителя в админке; показатели не суммируются</div></article>
+      </div>
+
+      <div class="fact-note reveal">Сценарий РЦ относится только к новым клиентам и не задваивает расчет MAX по действующей базе. Бесплатное брендированное приложение стимулирует передачу показаний и оплату, но пользователь учитывается один раз — независимо от того, вошел он через МП, MAX или оба канала.</div>
+      <div class="source">Внутренние источники: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта МДО 2026</a> — прогноз новых клиентов и тарифы; <a href="https://docs.google.com/spreadsheets/d/10XD_EZOs18041g7Vxm2eABpfHdYBXS9PeQxLQPmUjt4/edit?gid=1778486252#gid=1778486252" target="_blank" rel="noreferrer">P&amp;L МДО</a> — стоимость разработки РЦ. Внешний ориентир: <a href="https://www.interfax.ru/business/1025082" target="_blank" rel="noreferrer">факт покупки Domiland</a> и <a href="https://psksolutions.ru/media/yandeks-upravdom-zachem-kompaniya-kupila-proptech-platformu-domilend/" target="_blank" rel="noreferrer">экспертная оценка 300–675 млн ₽ при аудитории более 1 млн жителей</a>; сумма сделки официально не раскрыта.</div>
     </div>
   </section>
 
