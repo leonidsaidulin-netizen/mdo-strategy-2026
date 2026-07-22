@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Обновленная стратегия Мой дом онлайн 2026: план и факт, продажи, апсейлы и отвалы, исследование, SLA, экономика клиентской базы, пилот РЦ, KPI и ответы комитету.">
+<meta name="description" content="Обновленная стратегия Мой дом онлайн 2026: действующая база, продажи, финансовый срез, исследование, SLA, MAX, Расчетный центр и ответы на вопросы первой защиты.">
 <title>Стратегия МДО 2026 — повторная защита — v3</title>
 <style>html{scroll-behavior:smooth;background:#fffaf3}body{margin:0;min-width:320px;background:#fffaf3}a:focus-visible{outline:3px solid #ff5a14;outline-offset:4px}</style>
 </head>
@@ -231,6 +231,83 @@
 
     #mdo-strategy-site .section-head .lead { margin-block-end: 0; }
 
+    #mdo-strategy-site .results-head {
+      display: block;
+      margin-block-end: 34px;
+    }
+
+    #mdo-strategy-site .results-head h2 {
+      max-width: 1120px;
+      font-size: clamp(2.1rem, 3.5vw, 3.5rem);
+      line-height: 1.02;
+    }
+    #mdo-strategy-site .results-head .lead { max-width: 900px; }
+
+    #mdo-strategy-site .results-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    #mdo-strategy-site .result-card { min-height: 240px; }
+
+    #mdo-strategy-site .result-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      margin-block-end: 28px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--orange);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    #mdo-strategy-site .result-card h3 {
+      max-width: 420px;
+      font-size: clamp(1.35rem, 2.3vw, 2rem);
+    }
+
+    #mdo-strategy-site .strategy-stages {
+      display: grid;
+      gap: 14px;
+      margin-block-start: 34px;
+    }
+
+    #mdo-strategy-site .strategy-stage {
+      display: grid;
+      grid-template-columns: 72px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+      padding: clamp(24px, 3vw, 36px);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: rgba(255, 250, 243, 0.78);
+    }
+
+    #mdo-strategy-site .strategy-stage:nth-child(2) { background: rgba(248, 215, 197, 0.62); }
+    #mdo-strategy-site .strategy-stage:nth-child(3) { background: rgba(255, 90, 20, 0.10); }
+    #mdo-strategy-site .strategy-stage:nth-child(4) { color: #fff; background: var(--dark); }
+
+    #mdo-strategy-site .stage-number {
+      display: grid;
+      width: 56px;
+      aspect-ratio: 1;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--orange);
+      font-weight: 700;
+    }
+
+    #mdo-strategy-site .strategy-stage h3 { margin-block-end: 8px; }
+    #mdo-strategy-site .strategy-stage p { margin: 0; color: var(--muted-ink); line-height: 1.55; }
+    #mdo-strategy-site .strategy-stage:nth-child(4) p { color: rgba(255, 255, 255, 0.76); }
+
     #mdo-strategy-site .steps,
     #mdo-strategy-site .metrics,
     #mdo-strategy-site .research-grid,
@@ -270,16 +347,6 @@
     #mdo-strategy-site .dark .answer-row { border-color: rgba(255, 255, 255, 0.17); }
     #mdo-strategy-site .dark .answer-row dt { color: #fff; }
     #mdo-strategy-site .dark .answer-row dd { color: rgba(255, 255, 255, 0.88); }
-
-    #mdo-strategy-site .asked-by {
-      display: block;
-      margin-block-start: 7px;
-      color: var(--orange-deep);
-      font-size: 0.76rem;
-      font-weight: 600;
-      letter-spacing: 0.035em;
-    }
-    #mdo-strategy-site .dark .asked-by { color: #ffc1a5; }
 
     #mdo-strategy-site .fact-note {
       margin-block-start: 18px;
@@ -899,6 +966,7 @@
       #mdo-strategy-site .research-grid,
       #mdo-strategy-site .economy-grid,
       #mdo-strategy-site .outcome-grid { grid-template-columns: 1fr; }
+      #mdo-strategy-site .results-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       #mdo-strategy-site .steps,
       #mdo-strategy-site .metrics,
       #mdo-strategy-site .findings,
@@ -921,6 +989,9 @@
       #mdo-strategy-site .shell { width: min(100% - 24px, 1180px); }
       #mdo-strategy-site .hero h1 { font-size: clamp(2.05rem, 9.5vw, 3rem); }
       #mdo-strategy-site .section-head { display: block; }
+      #mdo-strategy-site .results-grid { grid-template-columns: 1fr; }
+      #mdo-strategy-site .strategy-stage { grid-template-columns: 52px minmax(0, 1fr); gap: 16px; }
+      #mdo-strategy-site .stage-number { width: 44px; }
       #mdo-strategy-site .steps,
       #mdo-strategy-site .metrics,
       #mdo-strategy-site .findings,
@@ -941,22 +1012,6 @@
       #mdo-strategy-site .priority { grid-template-columns: 42px 1fr; gap: 10px; }
       #mdo-strategy-site .answer-row { grid-template-columns: 1fr; gap: 8px; }
       #mdo-strategy-site .sla-arrow { display: none; }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      #mdo-strategy-site {
-        --ink: #f5ece3;
-        --muted-ink: #c8bbb1;
-        --paper: #211d1b;
-        --paper-2: #2b2522;
-        --peach: #5b3528;
-        --peach-2: #a85f40;
-        --dark: #171514;
-        --line: rgba(255, 247, 239, 0.12);
-      }
-      #mdo-strategy-site .action.primary,
-      #mdo-strategy-site .panel.orange,
-      #mdo-strategy-site .orbit-center { color: #fff; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -990,20 +1045,18 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section results-section" id="results">
     <div class="shell">
-      <div class="section-head reveal">
-        <div>
-          <p class="eyebrow">Что изменилось после первой защиты</p>
-          <h2>Стратегия перешла от набора гипотез к продуктовым решениям и первым пилотам</h2>
-        </div>
-        <p class="lead">Ниже разделены достигнутый результат, ранний спрос, принятое стратегическое решение и гипотеза, которую еще нельзя выдавать за подтвержденную.</p>
+      <div class="section-head results-head reveal">
+        <p class="eyebrow">Что изменилось после первой защиты</p>
+        <h2>Команда проверила исходные данные, провела исследование и запустила новые продуктовые направления</h2>
+        <p class="lead">Каждый результат имеет отдельный статус: рабочий результат, спрос в воронке, принятое решение или гипотеза на проверке.</p>
       </div>
-      <div class="steps">
-        <article class="panel reveal" style="--delay: 40ms"><span class="step-number">Результат</span><h3>РЦ вышел в пилотный контур</h3><p class="muted">MVP готов. Клиент оплатил диспетчеризацию и участвует в пилоте РЦ. Это еще не отдельная продажа услуги РЦ.</p></article>
-        <article class="panel peach reveal" style="--delay: 100ms"><span class="step-number">Ранний спрос</span><h3>MAX дошел до коммерческой воронки</h3><p class="muted">10 УК находятся в интеграции, двум клиентам выставлены счета. Факт оплаты пока не подтвержден.</p></article>
-        <article class="panel reveal" style="--delay: 160ms"><span class="step-number">Решение</span><h3>ГИС ЖКХ вошла в контур продукта</h3><p class="muted">Исследование подтвердило потребность целевого сегмента работать без двойного ведения заявок и данных.</p></article>
-        <article class="panel dark reveal" style="--delay: 220ms"><span class="step-number">Проверка</span><h3>AI-диспетчер требует пилота</h3><p class="muted">Интерес клиентов есть, но архитектура, стоимость и экономика внедрения еще не подтверждены.</p></article>
+      <div class="results-grid">
+        <article class="panel result-card reveal" style="--delay: 40ms"><span class="result-chip">Рабочий результат</span><h3>РЦ вышел в пилотный контур</h3><p class="muted">MVP готов. Клиент оплатил диспетчеризацию и участвует в пилоте РЦ. Отдельную продажу услуги РЦ команда пока не зафиксировала.</p></article>
+        <article class="panel peach result-card reveal" style="--delay: 100ms"><span class="result-chip">Спрос в воронке</span><h3>MAX дошел до коммерческого этапа</h3><p class="muted">10 УК проходят интеграцию, двум клиентам выставлены счета. Оплату команда пока не получила.</p></article>
+        <article class="panel result-card reveal" style="--delay: 160ms"><span class="result-chip">Принятое решение</span><h3>ГИС ЖКХ вошла в план продукта</h3><p class="muted">Сервисные УК хотят вести заявки и данные в одном окне. Команда включила интеграцию с ГИС ЖКХ в продуктовый контур.</p></article>
+        <article class="panel dark result-card reveal" style="--delay: 220ms"><span class="result-chip">Гипотеза на проверке</span><h3>AI-диспетчер требует пилота</h3><p class="muted">Клиенты проявили интерес. Команда должна проверить архитектуру, стоимость и экономику внедрения.</p></article>
       </div>
       <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта и дорожная карта МДО 2026</a> · <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">исследование МДО 2026</a>.</div>
     </div>
@@ -1012,15 +1065,15 @@
   <section class="section" id="strategy">
     <div class="shell">
       <p class="eyebrow reveal">Стратегия МДО на одном экране</p>
-      <h2 class="reveal">Стабилизировать текущий сервис и собрать единый контур работы с жителем</h2>
-      <p class="lead reveal">В 2026 году МДО сначала обеспечивает надежность, удержание и управляемые продажи. Затем развивает продукт вокруг голосового диспетчера и объединяет диспетчерскую, MAX, ГИС ЖКХ и расчеты.</p>
-      <div class="strategy-grid">
-        <article class="panel reveal"><div class="strategy-number">01</div><h3>Основа бизнеса</h3><p class="muted">SLA робота, диспетчерской и поддержки; удержание действующей базы; качество продаж и данных CRM.</p></article>
-        <article class="panel peach reveal" style="--delay: 70ms"><div class="strategy-number">02</div><h3>Целевой продукт</h3><p class="muted">Единое окно работы с жителем без повторного ведения обращений, показаний, оплат и расчетов.</p></article>
-        <article class="panel orange reveal" style="--delay: 140ms"><div class="strategy-number">03</div><h3>Основное УТП</h3><p class="muted">Голосовой диспетчер принимает обращения, консультирует и разгружает сотрудников управляющей компании.</p></article>
-        <article class="panel dark reveal" style="--delay: 210ms"><div class="strategy-number">04</div><h3>Условие масштабирования</h3><p class="muted">MAX, ГИС ЖКХ, РЦ и AI-сценарии масштабируются после проверки качества, спроса и экономики.</p></article>
+      <h2 class="reveal">Четыре последовательных этапа развития МДО</h2>
+      <p class="lead reveal">Каждый следующий этап опирается на результат предыдущего. Команда сначала обеспечивает качество текущего сервиса, затем усиливает УТП и собирает единый контур работы с жителем.</p>
+      <div class="strategy-stages">
+        <article class="strategy-stage reveal"><span class="stage-number">1</span><div><h3>Улучшить основу бизнеса</h3><p>Контролировать и улучшать SLA робота, диспетчерской и поддержки. Работать с удержанием 159 действующих клиентов, увеличивать продажи и поддерживать качество данных в Bitrix.</p></div></article>
+        <article class="strategy-stage reveal" style="--delay: 70ms"><span class="stage-number">2</span><div><h3>Развить основное УТП</h3><p>Поддерживать действующего робота-диспетчера и расширять его сценарии. Проверить развитие робота в сторону AI-ассистента, который консультирует жителей и отвечает на запрос рынка.</p></div></article>
+        <article class="strategy-stage reveal" style="--delay: 140ms"><span class="stage-number">3</span><div><h3>Создать целевой продукт</h3><p>Собрать из МДО единое окно работы с жителем. В закрытый контур входят диспетчерская, интеграция с ГИС ЖКХ, Расчетный центр и мессенджер MAX.</p></div></article>
+        <article class="strategy-stage reveal" style="--delay: 210ms"><span class="stage-number">4</span><div><h3>Перейти к масштабированию</h3><p>После стабилизации сервиса и проверки новых направлений команда сможет брать следующие гипотезы рынка, партнерские форматы и стратегические проекты.</p></div></article>
       </div>
-      <div class="fact-note reveal"><b>Куда идет МДО:</b> к единому сервисному контуру работы с жителем. <b>За счет чего:</b> надежности текущего сервиса и голосового диспетчера как причины выбора продукта.</div>
+      <article class="panel dark reveal" style="margin-block-start: 18px"><h3>Куда идет МДО в 2026–2028 годах</h3><p class="muted">МДО создает единый сервисный контур работы с жителем за счет надежности, качества и комплексности текущего сервиса. Комплекс включает единое окно заявок из разных каналов, голосового консультанта по заявкам и начислениям, а также автоматизированный Расчетный центр в контуре абонентского отдела УК.</p></article>
       <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">исследование МДО 2026</a> · <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта и roadmap</a>.</div>
     </div>
   </section>
@@ -1044,6 +1097,72 @@
         <div class="finance-column"><span class="finance-bar" style="--bar-height: 76%"></span><span class="finance-value">32,742</span><span class="finance-year">2025</span></div>
       </div>
       <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1404717816" target="_blank" rel="noreferrer">Мегатаблица · «Аккаунты»</a> — выручка; <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=81449564" target="_blank" rel="noreferrer">Мегатаблица · «Клиенты»</a> и <a href="https://docs.google.com/spreadsheets/d/1vMyiuGBAvD8DDQ4z1xLsmZS4cGe8DP8bGGXQjia8hvA/edit?gid=729265529#gid=729265529" target="_blank" rel="noreferrer">реестр churn</a> — расчетный мост клиентской базы. Методика: 159 клиентов на конец 2025 года; база на конец 2024 года = 159 − 13 новых + 8 ушедших = 154. Это расчетная реконструкция, а не сохраненный исторический снимок.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow reveal">Действующая база</p>
+      <h2 class="reveal">Действующая база: 159 клиентов. Текущие задачи — удержание и тарифный апсейл после улучшения сервиса, робота и SLA</h2>
+      <div class="kpis">
+        <article class="panel reveal"><div class="metric-value" data-counter="159">0</div><div class="metric-label">активных клиентов · MRR 2,803 млн ₽ · средний ARPU 17,63 тыс. ₽</div></article>
+        <article class="panel reveal" style="--delay: 50ms"><div class="metric-value">15,5 тыс. ₽</div><div class="metric-label">ARPU компонента «Сервис» · 136 активных клиентов</div></article>
+        <article class="panel peach reveal" style="--delay: 100ms"><div class="metric-value">33,7 тыс. ₽</div><div class="metric-label">ARPU компонента «ЭКСП» · 18 активных клиентов</div></article>
+        <article class="panel reveal" style="--delay: 150ms"><div class="metric-value" data-counter="60">0</div><div class="metric-label">сервисных УК · рабочая сегментация · 43% MRR</div></article>
+      </div>
+      <article class="panel dark reveal" style="margin-block-start: 18px">
+        <h3>Три повторяющихся сценария оттока</h3>
+        <p class="muted">Надежность этого контура напрямую влияет на удержание.</p>
+        <div class="steps" style="margin-block-start: 28px">
+          <div><span class="step-number">1</span><p>Сбой робота или диспетчерской и пропущенное аварийное обращение.</p></div>
+          <div><span class="step-number">2</span><p>Нет 24/7-поддержки или проблема телефонии остается без реакции.</p></div>
+          <div><span class="step-number">3</span><p>Не реализована функция или интеграция, критичная для процесса клиента.</p></div>
+          <div><span class="step-number">→</span><p>Поэтому SLA — продуктовый приоритет перед ускорением продаж.</p></div>
+        </div>
+      </article>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица МДО</a> · <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">исследование МДО 2026</a>.</div>
+    </div>
+  </section>
+
+  <section class="section" id="sales-churn">
+    <div class="shell">
+      <p class="eyebrow reveal">Продажи и upsell</p>
+      <h2 class="reveal">Новые и дополнительные продажи за 2025 и 2026 годы</h2>
+      <div class="economy-grid">
+        <article class="panel reveal">
+          <h3>Январь–декабрь 2025</h3>
+          <div class="answer-list">
+            <div class="answer-row"><dt>Всего продаж</dt><dd><strong>36 продаж</strong></dd></div>
+            <div class="answer-row"><dt>Новые продажи новым клиентам</dt><dd><strong>13 клиентов</strong></dd></div>
+            <div class="answer-row"><dt>Состав новых клиентов</dt><dd><strong>7 «Сервис» · 6 «Эксплуатация» · 0 OSS</strong></dd></div>
+            <div class="answer-row"><dt>Сумма новых продаж</dt><dd><strong>4,604 млн ₽ ARR</strong></dd></div>
+            <div class="answer-row"><dt>Дополнительные продажи</dt><dd><strong>23 продажи</strong></dd></div>
+            <div class="answer-row"><dt>Состав допродаж</dt><dd><strong>2 «Сервис» · 10 «Эксплуатация» · 11 OSS</strong></dd></div>
+            <div class="answer-row"><dt>Подтвержденный прирост допродаж</dt><dd><strong>не менее +122,0 тыс. ₽ MRR</strong></dd></div>
+            <div class="answer-row"><dt>Отток клиентов</dt><dd><strong>8 клиентов</strong></dd></div>
+            <div class="answer-row"><dt>Сумма оттока</dt><dd><strong>369 тыс. ₽</strong></dd></div>
+          </div>
+          <div class="fact-note">36 продаж = 13 первых продаж новым клиентам + 23 последующие продажи. Внутри 13 новых клиентов: 7 купили «Сервис», 6 — «Эксплуатацию»; эти строки не прибавляются к итогу повторно.</div>
+          <div class="source"><a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1140973403&amp;range=A176:K232" target="_blank" rel="noreferrer">Открыть данные 2025 в Мегатаблице</a></div>
+        </article>
+        <article class="panel peach reveal" style="--delay: 100ms">
+          <h3>Январь–17 июля 2026</h3>
+          <div class="answer-list">
+            <div class="answer-row"><dt>Всего продаж</dt><dd><strong>21 продажа</strong></dd></div>
+            <div class="answer-row"><dt>Новые продажи новым клиентам</dt><dd><strong>5 клиентов</strong></dd></div>
+            <div class="answer-row"><dt>Состав новых клиентов</dt><dd><strong>0 «Сервис» · 5 «Эксплуатация» · 0 OSS</strong></dd></div>
+            <div class="answer-row"><dt>Сумма новых продаж</dt><dd><strong>1,214 млн ₽ ARR</strong></dd></div>
+            <div class="answer-row"><dt>Дополнительные продажи</dt><dd><strong>16 продаж</strong></dd></div>
+            <div class="answer-row"><dt>Состав допродаж</dt><dd><strong>0 «Сервис» · 12 «Эксплуатация» · 4 OSS</strong></dd></div>
+            <div class="answer-row"><dt>Подтвержденный прирост допродаж</dt><dd><strong>не менее +102,7 тыс. ₽ MRR</strong></dd></div>
+            <div class="answer-row"><dt>Отток клиентов</dt><dd><strong>5 клиентов</strong></dd></div>
+            <div class="answer-row"><dt>Сумма оттока</dt><dd><strong>≈404 тыс. ₽</strong></dd></div>
+          </div>
+          <div class="fact-note">21 продажа = 5 первых продаж новым клиентам + 16 последующих продаж. Все 5 новых клиентов начали с тарифа «Эксплуатация».</div>
+          <div class="source"><a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1140973403&amp;range=A234:K265" target="_blank" rel="noreferrer">Открыть данные 2026 в Мегатаблице</a></div>
+        </article>
+      </div>
+      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1140973403&amp;range=A176:K266" target="_blank" rel="noreferrer">Мегатаблица · «Оплаты (для сверки)»</a> — строки продаж и состав продуктов; <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=81449564&amp;range=A1:AT517" target="_blank" rel="noreferrer">«Клиенты»</a> — уникальный клиент по ID в админке, первая коммерческая дата и ARR; <a href="https://docs.google.com/spreadsheets/d/1vMyiuGBAvD8DDQ4z1xLsmZS4cGe8DP8bGGXQjia8hvA/edit?gid=729265529#gid=729265529" target="_blank" rel="noreferrer">«Продление» · «Отвал клиентов»</a> — количество клиентов и сумма оттока. Методика: первая продажа уникальному аккаунту считается новой продажей; все следующие строки этого аккаунта и продажи старым аккаунтам считаются дополнительными. Поэтому строки УК СМС, ИП Поморцевой и УК «Рассвет» в 2025 году, а также ООО «Мастер» и «Образцово Отрадный» в 2026 году перенесены из новых в дополнительные продажи. Прирост MRR указан как подтвержденный минимум по строкам с заполненным числовым эффектом. Показатель 2025 «8 клиентов / 369 тыс. ₽» принят по управленческой сверке владельца; сумма оттока 2026 рассчитана пропорционально дням с даты отключения до 17.07.2026.</div>
     </div>
   </section>
 
@@ -1093,71 +1212,11 @@
     </div>
   </section>
 
-  <section class="section" id="sales-churn">
-    <div class="shell">
-      <p class="eyebrow reveal">Продажи и upsell</p>
-      <h2 class="reveal">Новые и дополнительные продажи за 2025 и 2026 годы</h2>
-      <div class="economy-grid">
-        <article class="panel reveal">
-          <h3>Январь–декабрь 2025</h3>
-          <div class="answer-list">
-            <div class="answer-row"><dt>Всего продаж</dt><dd><strong>36 продаж</strong></dd></div>
-            <div class="answer-row"><dt>Новые продажи новым клиентам</dt><dd><strong>13 клиентов</strong></dd></div>
-            <div class="answer-row"><dt>Состав новых клиентов</dt><dd><strong>7 «Сервис» · 6 «Эксплуатация» · 0 OSS</strong></dd></div>
-            <div class="answer-row"><dt>Сумма новых продаж</dt><dd><strong>4,604 млн ₽ ARR</strong></dd></div>
-            <div class="answer-row"><dt>Дополнительные продажи</dt><dd><strong>23 продажи</strong></dd></div>
-            <div class="answer-row"><dt>Состав допродаж</dt><dd><strong>2 «Сервис» · 10 «Эксплуатация» · 11 OSS</strong></dd></div>
-            <div class="answer-row"><dt>Подтвержденный прирост допродаж</dt><dd><strong>не менее +122,0 тыс. ₽ MRR</strong></dd></div>
-            <div class="answer-row"><dt>Отток клиентов</dt><dd><strong>8 клиентов</strong></dd></div>
-            <div class="answer-row"><dt>Сумма оттока</dt><dd><strong>369 тыс. ₽</strong></dd></div>
-          </div>
-          <div class="fact-note">36 продаж = 13 первых продаж новым клиентам + 23 последующие продажи. Внутри 13 новых клиентов: 7 купили «Сервис», 6 — «Эксплуатацию»; эти строки не прибавляются к итогу повторно.</div>
-          <div class="source"><a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1140973403&amp;range=A176:K232" target="_blank" rel="noreferrer">Открыть данные 2025 в Мегатаблице</a></div>
-        </article>
-        <article class="panel peach reveal" style="--delay: 100ms">
-          <h3>Январь–17 июля 2026</h3>
-          <div class="answer-list">
-            <div class="answer-row"><dt>Всего продаж</dt><dd><strong>21 продажа</strong></dd></div>
-            <div class="answer-row"><dt>Новые продажи новым клиентам</dt><dd><strong>5 клиентов</strong></dd></div>
-            <div class="answer-row"><dt>Состав новых клиентов</dt><dd><strong>0 «Сервис» · 5 «Эксплуатация» · 0 OSS</strong></dd></div>
-            <div class="answer-row"><dt>Сумма новых продаж</dt><dd><strong>1,214 млн ₽ ARR</strong></dd></div>
-            <div class="answer-row"><dt>Дополнительные продажи</dt><dd><strong>16 продаж</strong></dd></div>
-            <div class="answer-row"><dt>Состав допродаж</dt><dd><strong>0 «Сервис» · 12 «Эксплуатация» · 4 OSS</strong></dd></div>
-            <div class="answer-row"><dt>Подтвержденный прирост допродаж</dt><dd><strong>не менее +102,7 тыс. ₽ MRR</strong></dd></div>
-            <div class="answer-row"><dt>Отток клиентов</dt><dd><strong>5 клиентов</strong></dd></div>
-            <div class="answer-row"><dt>Сумма оттока</dt><dd><strong>≈404 тыс. ₽</strong></dd></div>
-          </div>
-          <div class="fact-note">21 продажа = 5 первых продаж новым клиентам + 16 последующих продаж. Все 5 новых клиентов начали с тарифа «Эксплуатация».</div>
-          <div class="source"><a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1140973403&amp;range=A234:K265" target="_blank" rel="noreferrer">Открыть данные 2026 в Мегатаблице</a></div>
-        </article>
-      </div>
-      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1140973403&amp;range=A176:K266" target="_blank" rel="noreferrer">Мегатаблица · «Оплаты (для сверки)»</a> — строки продаж и состав продуктов; <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=81449564&amp;range=A1:AT517" target="_blank" rel="noreferrer">«Клиенты»</a> — уникальный клиент по ID в админке, первая коммерческая дата и ARR; <a href="https://docs.google.com/spreadsheets/d/1vMyiuGBAvD8DDQ4z1xLsmZS4cGe8DP8bGGXQjia8hvA/edit?gid=729265529#gid=729265529" target="_blank" rel="noreferrer">«Продление» · «Отвал клиентов»</a> — количество клиентов и сумма оттока. Методика: первая продажа уникальному аккаунту считается новой продажей; все следующие строки этого аккаунта и продажи старым аккаунтам считаются дополнительными. Поэтому строки УК СМС, ИП Поморцевой и УК «Рассвет» в 2025 году, а также ООО «Мастер» и «Образцово Отрадный» в 2026 году перенесены из новых в дополнительные продажи. Прирост MRR указан как подтвержденный минимум по строкам с заполненным числовым эффектом. Показатель 2025 «8 клиентов / 369 тыс. ₽» принят по управленческой сверке владельца; сумма оттока 2026 рассчитана пропорционально дням с даты отключения до 17.07.2026.</div>
-    </div>
-  </section>
 
-  <section class="section">
-    <div class="shell">
-      <p class="eyebrow reveal">Действующая база</p>
-      <h2 class="reveal">Действующая база: 159 клиентов. Текущие задачи — удержание и тарифный апсейл после улучшения сервиса, робота и SLA</h2>
-      <div class="kpis">
-        <article class="panel reveal"><div class="metric-value" data-counter="159">0</div><div class="metric-label">активных клиентов · MRR 2,803 млн ₽ · средний ARPU 17,63 тыс. ₽</div></article>
-        <article class="panel reveal" style="--delay: 50ms"><div class="metric-value">15,5 тыс. ₽</div><div class="metric-label">ARPU компонента «Сервис» · 136 активных клиентов</div></article>
-        <article class="panel peach reveal" style="--delay: 100ms"><div class="metric-value">33,7 тыс. ₽</div><div class="metric-label">ARPU компонента «ЭКСП» · 18 активных клиентов</div></article>
-        <article class="panel reveal" style="--delay: 150ms"><div class="metric-value" data-counter="60">0</div><div class="metric-label">сервисных УК · рабочая сегментация · 43% MRR</div></article>
-      </div>
-      <article class="panel dark reveal" style="margin-block-start: 18px">
-        <h3>Три повторяющихся сценария оттока</h3>
-        <p class="muted">Надежность этого контура напрямую влияет на удержание.</p>
-        <div class="steps" style="margin-block-start: 28px">
-          <div><span class="step-number">1</span><p>Сбой робота или диспетчерской и пропущенное аварийное обращение.</p></div>
-          <div><span class="step-number">2</span><p>Нет 24/7-поддержки или проблема телефонии остается без реакции.</p></div>
-          <div><span class="step-number">3</span><p>Не реализована функция или интеграция, критичная для процесса клиента.</p></div>
-          <div><span class="step-number">→</span><p>Поэтому SLA — продуктовый приоритет перед ускорением продаж.</p></div>
-        </div>
-      </article>
-      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица МДО</a> · <a href="https://docs.google.com/spreadsheets/d/19JRPmX-l4_2DX30Ij7JKkJljle3FvUAYvdBG8Z80G3M/edit" target="_blank" rel="noreferrer">исследование МДО 2026</a>.</div>
-    </div>
-  </section>
+
+
+
+
 
   <section class="section">
     <div class="shell">
@@ -1225,8 +1284,8 @@
 
   <section class="section" id="max-economics">
     <div class="shell">
-      <p class="eyebrow reveal">Итоги</p>
-      <h2 class="reveal">Итоги интеграции с мессенджером MAX</h2>
+      <p class="eyebrow reveal">Действующая гипотеза в работе</p>
+      <h2 class="reveal">Интеграция с мессенджером MAX</h2>
       <p class="lead reveal">Ранний спрос подтвержден интервью и текущей воронкой. Оплатой гипотеза еще не подтверждена: два счета выставлены и ожидают оплаты.</p>
 
       <div class="kpis">
@@ -1269,20 +1328,7 @@
     </div>
   </section>
 
-  <section class="section" id="sla">
-    <div class="shell">
-      <p class="eyebrow reveal">Контур SLA в работе команды</p>
-      <h2 class="reveal">Какие SLA и метрики команда уже контролирует</h2>
-      <p class="lead reveal">У каждого направления свой показатель и владелец. Для части метрик уже работает регулярный контроль; для uptime и нормативов реакции целевые пороги еще формализуются.</p>
-      <div class="kpis">
-        <article class="panel reveal"><h3>Аккаунтинг</h3><p class="muted">Активность робота и диспетчерской, риск оттока, действие по удержанию или апсейлу · еженедельно.</p></article>
-        <article class="panel peach reveal" style="--delay: 50ms"><h3>Продажи + продукт</h3><p class="muted">CAC, payback и качество заполнения причин отказа в Bitrix · ежемесячно и раз в две недели.</p></article>
-        <article class="panel reveal" style="--delay: 100ms"><h3>Поддержка</h3><p class="muted">Время первого ответа, срок решения и доля тикетов, закрытых в SLA · ежемесячно.</p></article>
-        <article class="panel dark reveal" style="--delay: 150ms"><h3>Разработка</h3><p class="muted">Uptime робота, диспетчерской и админки; сроки исправления багов · пороги формализуются.</p></article>
-      </div>
-      <div class="source">SLA = показатель + порог + владелец + срок реакции. Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">ССП, владельцы и дорожная карта МДО 2026</a>.</div>
-    </div>
-  </section>
+
 
   <section class="section">
       <div class="shell">
@@ -1340,44 +1386,27 @@
     </div>
   </section>
 
-  <section class="section" id="economy-base">
+  <section class="section" id="sla">
     <div class="shell">
-      <div class="section-head reveal">
-        <div>
-          <p class="eyebrow">Фактическая экономика действующей базы</p>
-          <h2>LTV рассчитан на едином горизонте 36 закрытых месяцев</h2>
-        </div>
-        <p class="lead">Период расчета выручки: июль 2023 — июнь 2026. Незакрытый июль 2026 не входит. Для всех показателей LTV используется один горизонт — 36 месяцев.</p>
+      <p class="eyebrow reveal">Контур SLA в работе команды с клиентом</p>
+      <h2 class="reveal">Какие SLA и метрики команда уже контролирует</h2>
+      <p class="lead reveal">У каждого направления есть показатель и владелец. Команда уже контролирует часть метрик, а uptime и нормативы реакции переводит в формальный SLA. Следующий блок показывает место этих показателей в ССП.</p>
+      <div class="kpis">
+        <article class="panel reveal"><h3>Аккаунтинг</h3><p class="muted">Активность робота и диспетчерской, риск оттока, действие по удержанию или апсейлу · еженедельно.</p></article>
+        <article class="panel peach reveal" style="--delay: 50ms"><h3>Продажи + продукт</h3><p class="muted">CAC, payback и качество заполнения причин отказа в Bitrix · ежемесячно и раз в две недели.</p></article>
+        <article class="panel reveal" style="--delay: 100ms"><h3>Поддержка</h3><p class="muted">Время первого ответа, срок решения и доля тикетов, закрытых в SLA · ежемесячно.</p></article>
+        <article class="panel dark reveal" style="--delay: 150ms"><h3>Разработка</h3><p class="muted">Uptime робота, диспетчерской и админки; сроки исправления багов · пороги формализуются.</p></article>
       </div>
-
-      <div class="ltv-strip reveal" aria-label="Фактическая экономика действующей клиентской базы">
-        <div class="ltv-item"><strong>159</strong><span>действующих клиентов по статусу в Мегатаблице</span></div>
-        <div class="ltv-item"><strong>527 тыс. ₽</strong><span>LTV выручки на клиента за единый горизонт 36 месяцев</span></div>
-        <div class="ltv-item"><strong>290 тыс. ₽</strong><span>валовая прибыль LTV на клиента при валовой марже 55%</span></div>
-        <div class="ltv-item"><strong>36 мес.</strong><span>единый горизонт расчета LTV для всей действующей базы</span></div>
-      </div>
-
-      <article class="panel dark reveal" id="cac" style="margin-block-start: 18px">
-        <h3>Расчетный CAC за июнь 2026</h3>
-        <p class="muted">Payback рассчитан через валовую прибыль: CAC / (ARPU × 55%).</p>
-        <div class="acquisition-scroll" role="region" aria-label="Экономика привлечения по каналам за июнь 2026" tabindex="0">
-          <div class="acquisition-table">
-            <div class="acquisition-row head"><span>Канал</span><span>CAC</span><span>ARPU / мес.</span><span>Payback</span></div>
-            <div class="acquisition-row"><span>Холодные продажи</span><span>39,6 тыс. ₽</span><span>21,0 тыс. ₽</span><span>3,4 мес.</span></div>
-            <div class="acquisition-row"><span>Агентский канал</span><span>65,6 тыс. ₽</span><span>21,6 тыс. ₽</span><span>5,5 мес.</span></div>
-            <div class="acquisition-row"><span>Расчетный центр · 0 продаж</span><span>—</span><span>—</span><span>—</span></div>
-          </div>
-        </div>
-      </article>
-
-      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=81449564&amp;range=A1:AT517" target="_blank" rel="noreferrer">Мегатаблица · действующие клиенты</a> · <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit#gid=1040110318&amp;range=DD1:EM10484" target="_blank" rel="noreferrer">выручка за 36 месяцев</a> · <a href="https://docs.google.com/spreadsheets/d/1eXuPYSERxftlz7CcDAXYeiaycfVbd6nc5InQsXvTRi0/edit" target="_blank" rel="noreferrer">CAC по каналам</a> · <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">валовая маржа</a>. LTV выручки: 83,791 млн ₽ / 159 = 527 тыс. ₽; валовая прибыль LTV: 527 тыс. ₽ × 55% = 290 тыс. ₽. Фактические продажи РЦ в июне: 0.</div>
+      <div class="source">SLA = показатель + порог + владелец + срок реакции. Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">ССП, владельцы и дорожная карта МДО 2026</a>.</div>
     </div>
   </section>
 
+
+
   <section class="section" id="bsc">
     <div class="shell">
-      <p class="eyebrow reveal">ССП МДО 2026</p>
-      <h2 class="reveal">Что уже работает как управленческий показатель, а что внедряется</h2>
+      <p class="eyebrow reveal">Управленческие показатели ССП МДО 2026</p>
+      <h2 class="reveal">Какие показатели уже внедрены, а какие команда внедряет</h2>
       <p class="lead reveal">ССП связывает ежедневную работу команды с финансовым результатом. Цепочка читается слева направо: ведущие показатели формируют качество продукта, клиентский результат и экономику.</p>
 
       <div class="bsc-flow reveal" aria-label="Причинная цепочка ССП: команда, процессы, продукт, клиенты, финансы">
@@ -1447,101 +1476,26 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="shell">
-      <p class="eyebrow reveal">Позиция по партнерствам</p>
-      <h2 class="reveal">Партнерство имеет смысл, если сокращает срок разработки или стоимость выхода на рынок</h2>
-      <p class="lead reveal">При ограниченной команде МДО не должно разрабатывать каждый модуль самостоятельно. При этом партнер не должен забирать контроль над клиентскими данными, качеством сервиса и основным УТП.</p>
-      <div class="findings">
-        <article class="panel reveal">
-          <span class="kpi-verdict good">Рассматривать сейчас</span>
-          <h3>Технологический модуль</h3>
-          <p class="muted">ГИС ЖКХ, телефония, распознавание речи или отдельный AI-компонент. Критерий: быстрее собственного решения при приемлемом SLA и стоимости.</p>
-        </article>
-        <article class="panel peach reveal" style="--delay: 80ms">
-          <span class="kpi-verdict">Подготовить</span>
-          <h3>Канал продаж и внедрения</h3>
-          <p class="muted">Партнер приводит или внедряет клиентов. Модель запускается после стандартизации тарифа, коммерческого предложения и процесса подключения.</p>
-        </article>
-        <article class="panel dark reveal" style="--delay: 160ms">
-          <span class="kpi-verdict">Отложить</span>
-          <h3>Лицензирование ядра робота</h3>
-          <p class="muted">Передача основного УТП конкурентам требует отдельной экономики, правил поддержки и защиты клиентской базы.</p>
-        </article>
-      </div>
-      <div class="fact-note reveal">Следующий шаг: составить короткий список партнеров, оценить экономию месяцев разработки и ресурсов команды, затем вынести варианты на отдельное решение. Запуск партнерской программы в текущую стратегию не включен.</div>
-      <div class="source">Основание: ограничения команды и варианты партнерских моделей, обсужденные на рабочей встрече по стратегии 22.07.2026.</div>
-    </div>
-  </section>
 
-  <section class="section">
-      <div class="shell">
-      <p class="eyebrow reveal">KPI 2026</p>
-      <h2 class="reveal">KPI стратегии и черновик годового бонуса нельзя смешивать в одну систему</h2>
-      <p class="lead reveal">Операционные показатели уже используются в управлении бизнесом. Пороги годового бонуса обсуждались 22 июля, но требуют утверждения формул, весов и источников.</p>
-      <div class="economy-grid">
-        <article class="panel reveal">
-          <span class="kpi-verdict good">Рабочий контур</span>
-          <h3>Операционные показатели стратегии</h3>
-          <dl class="answer-list">
-            <div class="answer-row"><dt>Выручка</dt><dd><strong>42,4 млн ₽</strong> · текущая цель стратегии; требует сверки с 37 млн ₽ в черновике бонуса</dd></div>
-            <div class="answer-row"><dt>MRR</dt><dd><strong>2,803 млн ₽</strong> факт · цель 2,95 млн ₽</dd></div>
-            <div class="answer-row"><dt>Новые клиенты</dt><dd><strong>5</strong> факт на 17.07 · прогноз 11–16 за год</dd></div>
-            <div class="answer-row"><dt>Уникальные жители МДО</dt><dd><strong>90 тыс.</strong> цель по единому профилю МП и MAX без дублей</dd></div>
-            <div class="answer-row"><dt>Валовая маржа</dt><dd><strong>≥50%</strong> цель · база 2025 около 55%</dd></div>
-            <div class="answer-row"><dt>Расчетный центр</dt><dd><strong>пилотный KPI</strong> вместо неподтвержденной выручки; число пилотов нужно утвердить</dd></div>
-            <div class="answer-row"><dt>Надежность</dt><dd><strong>SLA контролируется</strong>; окончательные пороги еще формализуются</dd></div>
-          </dl>
-        </article>
 
-        <article class="panel peach reveal" style="--delay: 100ms">
-          <span class="kpi-verdict">Требует утверждения</span>
-          <h3>Черновик годового KPI: минимум / цель</h3>
-          <dl class="answer-list">
-            <div class="answer-row"><dt>Доступность робота</dt><dd><strong>98% / 99,5%</strong></dd></div>
-            <div class="answer-row"><dt>Доступность диспетчерской</dt><dd><strong>99% / 99,5%</strong></dd></div>
-            <div class="answer-row"><dt>Поддержка в SLA</dt><dd><strong>90% / 95%</strong></dd></div>
-            <div class="answer-row"><dt>Удержание</dt><dd><strong>&lt;800 тыс. ₽ и ≤8 / ≤650 тыс. ₽ и ≤6</strong> · период и формула churn не утверждены</dd></div>
-            <div class="answer-row"><dt>Новые клиенты</dt><dd><strong>10 или 2 млн ₽ / 12 или 2,4 млн ₽</strong> · нужно утвердить правило «или»</dd></div>
-            <div class="answer-row"><dt>Выручка МДО</dt><dd><strong>32,7 / 37 млн ₽</strong> · расходится с целью стратегии 42,4 млн ₽</dd></div>
-            <div class="answer-row"><dt>Цифровой охват</dt><dd><strong>МП 55 / 60 тыс. · квартиры 40 / 45 тыс.</strong> · отдельные показатели, не сумма</dd></div>
-          </dl>
-        </article>
-      </div>
-      <div class="fact-note reveal">Рабочее предложение по весам: общая выручка не менее 20%; удержание выше новых направлений; новые направления около 10%. Это не утвержденная схема бонуса.</div>
-      <div class="source">Источники: <a href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица МДО</a> · <a href="https://docs.google.com/spreadsheets/d/1c0iUc44wljmllpDoy-1C-2aQ3t-Q9m7SlU5r1KXgt0Y/edit" target="_blank" rel="noreferrer">БД Метрики</a> · <a href="https://docs.google.com/spreadsheets/d/1myDVsg86Z8uXcNFLGdd_CMByUJWog-SQRc37WLdsBf0/edit" target="_blank" rel="noreferrer">ССП и метрики команды</a> · черновик KPI по итогам рабочей встречи 22.07.2026.</div>
-    </div>
-  </section>
+
 
   <section class="section">
     <div class="shell">
-      <p class="eyebrow reveal">Q3–Q4 2026</p>
-      <h2 class="reveal">Сначала готовность и пилоты, затем решение о масштабировании</h2>
+      <p class="eyebrow reveal">Этапы исполнения стратегии</p>
+      <h2 class="reveal">От качества текущего сервиса к проверенному масштабированию</h2>
       <div class="timeline reveal">
         <span class="timeline-progress" aria-hidden="true"></span>
-        <article class="milestone"><div class="milestone-dot"></div><div class="milestone-date">Июль</div><h3>Контроль</h3><p class="muted">SLA и ошибки робота — Корсунова + Скоробогатов. Данные ГИС и AI-прототип — Сайдулин + Корсунова.</p></article>
-        <article class="milestone"><div class="milestone-dot"></div><div class="milestone-date">Август</div><h3>Интеграция</h3><p class="muted">ГИС и SLA-модуль — Сайдулин + Корсунова. Контур РЦ — Сайдулин + 66bit.</p></article>
-        <article class="milestone accent"><div class="milestone-dot"></div><div class="milestone-date">10 сентября</div><h3>Контроль РЦ</h3><p class="muted">Контрольный расчет — Сайдулин + 66bit + эксперт. Решение о расширении пилотов и переходе к операционной отладке.</p></article>
-        <article class="milestone"><div class="milestone-dot"></div><div class="milestone-date">Q4</div><h3>Проверка модели</h3><p class="muted">Повторные циклы РЦ, апсейл MAX и технические пилоты AI-диспетчера с зафиксированной экономикой.</p></article>
+        <article class="milestone"><div class="milestone-dot"></div><div class="milestone-date">Этап 1</div><h3>Качественный сервис</h3><p class="muted">Команда контролирует SLA робота, диспетчерской и поддержки, устраняет причины оттока и поддерживает качество данных Bitrix.</p></article>
+        <article class="milestone"><div class="milestone-dot"></div><div class="milestone-date">Этап 2</div><h3>Завершение пилотов</h3><p class="muted">Команда доводит РЦ до повторяемого расчетного цикла, завершает подключения MAX и проверяет интеграцию с ГИС ЖКХ.</p></article>
+        <article class="milestone accent"><div class="milestone-dot"></div><div class="milestone-date">Этап 3</div><h3>Развитие УТП</h3><p class="muted">Команда поддерживает действующего робота-диспетчера и проверяет AI-ассистента через техническую модель и пилоты.</p></article>
+        <article class="milestone"><div class="milestone-dot"></div><div class="milestone-date">Этап 4</div><h3>Масштабирование</h3><p class="muted">Команда расширяет подтвержденные направления и берет следующие гипотезы рынка после проверки качества, спроса и экономики.</p></article>
       </div>
-      <div class="source">Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">дорожная карта МДО 2026</a>, актуализация 16.07.2026.</div>
+      <div class="source">Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">дорожная карта МДО 2026</a> и результаты рабочей встречи 22.07.2026.</div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="shell">
-      <p class="eyebrow reveal">Решения для руководства</p>
-      <h2 class="reveal">Для исполнения стратегии нужно согласовать четыре управленческих решения</h2>
-      <div class="steps">
-        <article class="panel reveal"><span class="step-number">01</span><h3>KPI Расчетного центра</h3><p class="muted">Заменить старое обещание выручки 2026 на число квалифицированных и успешно завершенных пилотов.</p></article>
-        <article class="panel peach reveal" style="--delay: 70ms"><span class="step-number">02</span><h3>Ресурс РЦ</h3><p class="muted">Утвердить условие найма расчетчика: нагрузка, число пилотов или объем лицевых счетов, после которого аутсорса недостаточно.</p></article>
-        <article class="panel reveal" style="--delay: 140ms"><span class="step-number">03</span><h3>KPI и годовой бонус</h3><p class="muted">Свести цели по выручке, новым клиентам, удержанию и цифровому охвату; утвердить веса, формулы и источники.</p></article>
-        <article class="panel dark reveal" style="--delay: 210ms"><span class="step-number">04</span><h3>Партнерский трек</h3><p class="muted">Разрешить оценку короткого списка партнеров и назначить дату решения по моделям, которые экономят ресурс команды.</p></article>
-      </div>
-      <div class="fact-note reveal">Эти вопросы не являются скрытыми недостатками стратегии. Это решения, от которых зависят измеримость результата, ресурсный план и темп исполнения.</div>
-      <div class="source">Основание: расхождения между действующей стратегией и рабочими KPI, выявленные на встрече 22.07.2026; рабочий документ: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта МДО</a>.</div>
-    </div>
-  </section>
+
 
   <section class="section" id="answers">
     <div class="shell">
@@ -1550,19 +1504,19 @@
         <article class="panel reveal">
           <h3>Бизнес и финансы</h3>
           <dl class="answer-list">
-            <div class="answer-row"><dt>Почему не выполнен план 2025?<span class="asked-by">Михаил Бабкин · Елена Корецкая · Оксана Погодаева</span></dt><dd>План 40,0 млн ₽, факт 32,742 млн ₽, разрыв 7,258 млн ₽; около пяти месяцев без устойчивого контура продаж.</dd></div>
-            <div class="answer-row"><dt>Финансовый результат и аллокация?<span class="asked-by">Эдуард Гроде · Елена Корецкая</span></dt><dd>Январь–июнь 2026: выручка 14,011 млн ₽; операционные расходы с разработкой 12,814 млн ₽; аллокация ГК 87 тыс. ₽. Операционный результат после аллокации составляет +1,110 млн ₽. После выплат 66bit на 2,378 млн ₽ и выплат ООО в ГК на 3,997 млн ₽ денежный результат составляет −5,266 млн ₽. Выплат учредителям в периоде не было.</dd></div>
-            <div class="answer-row"><dt>Что показывает экономика продаж?<span class="asked-by">Эдуард Гроде</span></dt><dd>Модель июня показывает CAC 39,6 тыс. ₽ и payback 3,4 месяца для холодных продаж; для агентского канала — 65,6 тыс. ₽ и 5,5 месяца. Продаж РЦ в июне не было.</dd></div>
-            <div class="answer-row"><dt>Почему без капитализации?<span class="asked-by">Иван Клевцов</span></dt><dd>Это решение учредителей. Операционная стратегия отвечает за выручку, маржу, churn и окупаемость.</dd></div>
+            <div class="answer-row"><dt>Почему не выполнен план 2025?</dt><dd>План 40,0 млн ₽, факт 32,742 млн ₽, разрыв 7,258 млн ₽; около пяти месяцев без устойчивого контура продаж.</dd></div>
+            <div class="answer-row"><dt>Финансовый результат и аллокация?</dt><dd>Январь–июнь 2026: выручка 14,011 млн ₽; операционные расходы с разработкой 12,814 млн ₽; аллокация ГК 87 тыс. ₽. Операционный результат после аллокации составляет +1,110 млн ₽. После выплат 66bit на 2,378 млн ₽ и выплат ООО в ГК на 3,997 млн ₽ денежный результат составляет −5,266 млн ₽. Выплат учредителям в периоде не было.</dd></div>
+            <div class="answer-row"><dt>Что показывает экономика продаж?</dt><dd>Модель июня показывает CAC 39,6 тыс. ₽ и payback 3,4 месяца для холодных продаж; для агентского канала — 65,6 тыс. ₽ и 5,5 месяца. Продаж РЦ в июне не было.</dd></div>
+            <div class="answer-row"><dt>Почему без капитализации?</dt><dd>Это решение учредителей. Операционная стратегия отвечает за выручку, маржу, churn и окупаемость.</dd></div>
           </dl>
         </article>
         <article class="panel dark reveal" style="--delay: 100ms">
           <h3>Стратегия и исполнение</h3>
           <dl class="answer-list">
-            <div class="answer-row"><dt>Где карта и ССП?<span class="asked-by">Михаил Бабкин · Елена Корецкая · Оксана Погодаева</span></dt><dd>Пять блоков: финансы, клиенты, продукт, процессы и команда; у каждой цели есть метрика, владелец и статус.</dd></div>
-            <div class="answer-row"><dt>Где дорожная карта?<span class="asked-by">Михаил Бабкин · Елена Корецкая</span></dt><dd>Она приведена выше; единая контрольная дата РЦ — 10.09.2026.</dd></div>
-            <div class="answer-row"><dt>Главный драйвер роста?<span class="asked-by">Иван Клевцов</span></dt><dd>Надежный робот — вход в продажу; ГИС — единое окно; РЦ — рост ARPU после проверки fit.</dd></div>
-            <div class="answer-row"><dt>РЦ уже готов?<span class="asked-by">Елена Корецкая</span></dt><dd>Нет. Платящий клиент МДО вошел в пилот; production readiness и прямой обмен с ГИС не подтверждены.</dd></div>
+            <div class="answer-row"><dt>Где карта и ССП?</dt><dd>Пять блоков: финансы, клиенты, продукт, процессы и команда; у каждой цели есть метрика, владелец и статус.</dd></div>
+            <div class="answer-row"><dt>Где дорожная карта?</dt><dd>Она приведена выше; единая контрольная дата РЦ — 10.09.2026.</dd></div>
+            <div class="answer-row"><dt>Главный драйвер роста?</dt><dd>Надежный робот — вход в продажу; ГИС — единое окно; РЦ — рост ARPU после проверки fit.</dd></div>
+            <div class="answer-row"><dt>РЦ уже готов?</dt><dd>Нет. Платящий клиент МДО вошел в пилот; production readiness и прямой обмен с ГИС не подтверждены.</dd></div>
           </dl>
         </article>
       </div>
@@ -1590,21 +1544,7 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="shell">
-      <p class="eyebrow reveal">Приложение · сценарий РЦ</p>
-      <h2 class="reveal">Потенциальная экономика после подтвержденной платной конверсии</h2>
-      <p class="lead reveal">Этот расчет показывает возможный масштаб направления после успешных пилотов. Он не является прогнозом выручки РЦ на 2026 год.</p>
-      <div class="kpis">
-        <article class="panel reveal"><div class="metric-value">30%</div><div class="metric-label">сценарная доля новых клиентов МДО, приобретающих РЦ</div></article>
-        <article class="panel peach reveal" style="--delay: 60ms"><div class="metric-value">≈3–5 УК</div><div class="metric-label">потенциально в год при 11–16 новых клиентах МДО</div></article>
-        <article class="panel reveal" style="--delay: 120ms"><div class="metric-value">2,88 млн ₽</div><div class="metric-label">ARR одной УК при 6 тыс. ЛС и полном тарифе 40 ₽ / ЛС</div></article>
-        <article class="panel dark reveal" style="--delay: 180ms"><div class="metric-value">28,5–41,5 млн ₽</div><div class="metric-label muted">сценарный ARR РЦ к концу третьего года при сохранении темпа</div></article>
-      </div>
-      <div class="fact-note reveal">Расчет чувствителен к четырем допущениям: числу новых клиентов МДО, конверсии в РЦ, среднему объему лицевых счетов и выбору полного тарифа. Перед включением в финансовый план каждое допущение должно быть подтверждено воронкой и договорами.</div>
-      <div class="source">Источник: <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта МДО 2026</a>. Формула: 6 000 ЛС × 40 ₽ × 12 месяцев = 2,88 млн ₽ ARR на одну УК.</div>
-    </div>
-  </section>
+
 
   <script>
     (() => {
