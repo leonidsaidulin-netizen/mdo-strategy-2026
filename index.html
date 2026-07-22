@@ -360,7 +360,7 @@
 
     #mdo-strategy-site .bsc-flow {
       display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 12px;
       margin-block: 34px 22px;
     }
@@ -399,7 +399,7 @@
       gap: 18px;
     }
 
-    #mdo-strategy-site .bsc-module:last-child { grid-column: 1 / -1; }
+    #mdo-strategy-site .bsc-module:last-child { grid-column: auto; }
 
     #mdo-strategy-site .bsc-module-head {
       display: flex;
@@ -979,7 +979,7 @@
       #mdo-strategy-site .priority span:nth-child(4) { grid-column: 2; }
       #mdo-strategy-site .ltv-strip { grid-template-columns: repeat(2, 1fr); }
       #mdo-strategy-site .timeline { grid-template-columns: repeat(2, 1fr); row-gap: 50px; }
-      #mdo-strategy-site .bsc-flow { grid-template-columns: repeat(5, minmax(116px, 1fr)); overflow-x: auto; padding-block-end: 8px; }
+      #mdo-strategy-site .bsc-flow { grid-template-columns: repeat(2, minmax(180px, 1fr)); overflow-x: auto; padding-block-end: 8px; }
       #mdo-strategy-site .timeline::before,
       #mdo-strategy-site .timeline-progress { display: none; }
       #mdo-strategy-site .hero .orbit { justify-self: center; }
@@ -1406,65 +1406,42 @@
   <section class="section" id="bsc">
     <div class="shell">
       <p class="eyebrow reveal">Управленческие показатели ССП МДО 2026</p>
-      <h2 class="reveal">Какие показатели уже внедрены, а какие команда внедряет</h2>
-      <p class="lead reveal">ССП связывает ежедневную работу команды с финансовым результатом. Цепочка читается слева направо: ведущие показатели формируют качество продукта, клиентский результат и экономику.</p>
+      <h2 class="reveal">Какие показатели команда уже использует в управлении МДО</h2>
+      <p class="lead reveal">ССП состоит из двух рабочих контуров. Команда каждую неделю контролирует качество исполнения и сервиса. Продукт связывает продажи, клиентскую базу и экономику направлений.</p>
 
-      <div class="bsc-flow reveal" aria-label="Причинная цепочка ССП: команда, процессы, продукт, клиенты, финансы">
-        <div class="bsc-node">Команда</div>
-        <div class="bsc-node">Процессы</div>
-        <div class="bsc-node">Продукт</div>
-        <div class="bsc-node">Клиенты</div>
-        <div class="bsc-node">Финансы</div>
+      <div class="bsc-flow reveal" aria-label="Два контура ССП: команда и качество исполнения, продукт и экономика">
+        <div class="bsc-node">Команда и качество исполнения</div>
+        <div class="bsc-node">Продукт и экономика</div>
       </div>
 
       <div class="bsc-grid">
         <article class="panel bsc-module reveal">
-          <div class="bsc-module-head"><h3>Команда и способности</h3><span class="bsc-module-index">01</span></div>
+          <div class="bsc-module-head"><h3>Команда и качество исполнения</h3><span class="bsc-module-index">01</span></div>
           <div class="bsc-metrics">
-            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Еженедельная продуктовая вовлеченность</h4><p>Все функциональные роли — от аккаунта до первой линии поддержки — участвуют в развитии продукта. Это ведущий показатель качества решений, удержания и будущей выручки.</p><span class="metric-owner">Сайдулин · еженедельно</span></div></div>
-            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>Выполнение продуктовой дорожной карты</h4><p>Доля задач, закрытых в срок, с отдельными владельцами по направлениям.</p><span class="metric-owner">Сайдулин + владельцы задач · ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Еженедельная продуктовая вовлеченность</h4><p>Команда обсуждает результаты каждого отдела и предложения по развитию продукта. В работе участвуют аккаунтинг, продажи, поддержка, интеграции и разработка.</p><span class="metric-owner">Сайдулин + руководители отделов · еженедельно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Продуктовый аудит показателей отделов</h4><p>На командном созвоне разбираются SLA поддержки, доступность робота и диспетчерской, показатели продаж и payback, качество интеграций и задачи разработки.</p><span class="metric-owner">Сайдулин + владельцы показателей · еженедельно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>SLA поддержки и процент доступности сервиса</h4><p>Команда контролирует время первого ответа и решения тикетов, долю обращений в SLA, процент доступности робота и диспетчерской, ошибки телефонии и критические жалобы.</p><span class="metric-owner">Скоробогатов + Корсунова · еженедельно и ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Контроль интеграций</h4><p>Команда фиксирует срок внедрения клиента и проверяет соответствие результата согласованному опросному листу и составу подключаемых услуг.</p><span class="metric-owner">Скоробогатов · по каждой интеграции</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Аудит качества Bitrix</h4><p>РОП и продакт проверяют комментарии по сделкам, этапы воронки и причины отказа. Команда использует эти записи для следующего анализа рынка.</p><span class="metric-owner">Амосов + Сайдулин · раз в две недели</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Предотвращение оттока</h4><p>Аккаунт-менеджер сравнивает использование робота и диспетчерской по каждому клиенту с предыдущими периодами. Падение активности запускает контакт с клиентом и план удержания.</p><span class="metric-owner">Аккаунт-менеджер + Скоробогатов · еженедельно</span></div></div>
           </div>
         </article>
 
-        <article class="panel bsc-module reveal" style="--delay: 60ms">
-          <div class="bsc-module-head"><h3>Процессы</h3><span class="bsc-module-index">02</span></div>
-          <div class="bsc-metrics">
-            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Срок внедрения клиента</h4><p>В плане интеграций фиксируются начало, завершение и продолжительность. Для ССП считаем новые внедрения основного сервиса без довнедрений и дублей модулей.</p><span class="metric-owner">Скоробогатов · ежемесячно</span></div></div>
-            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Аудит качества Bitrix</h4><p>РОП и продакт контролируют комментарии, воронку и причины отказа; следующий шаг — доля полностью заполненных сделок.</p><span class="metric-owner">Амосов · раз в две недели</span></div></div>
-            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>SLA поддержки и точность интеграции</h4><p>Время ответа и решения, доля обращений в срок, соответствие результата интеграции согласованному опросному листу.</p><span class="metric-owner">Скоробогатов · ежемесячно</span></div></div>
-          </div>
-        </article>
-
-        <article class="panel bsc-module reveal" style="--delay: 120ms">
-          <div class="bsc-module-head"><h3>Продукт и надежность</h3><span class="bsc-module-index">03</span></div>
-          <div class="bsc-metrics">
-            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Ошибки робота и телефонии</h4><p>Отслеживаются сбои, ошибки маршрутизации и критические жалобы, которые могут привести к оттоку.</p><span class="metric-owner">Корсунова + Скоробогатов · еженедельно</span></div></div>
-            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>Uptime робота, CRM и МП</h4><p>Процент бесперебойной работы и доля пропущенных аварийных обращений переводятся в формальный SLA.</p><span class="metric-owner">Корсунова + Скоробогатов</span></div></div>
-            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>Готовность и конверсия РЦ</h4><p>Контрольный расчет, завершение этапов пилота, количество пилотных клиентов и переход пилотов в оплату.</p><span class="metric-owner">Сайдулин + 66bit; продажи — Амосов</span></div></div>
-          </div>
-        </article>
-
-        <article class="panel bsc-module reveal" style="--delay: 180ms">
-          <div class="bsc-module-head"><h3>Клиенты и рынок</h3><span class="bsc-module-index">04</span></div>
-          <div class="bsc-metrics">
-            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Новые продажи и полный churn</h4><p>Команда считает новых клиентов и совокупный ARR их текущих тарифов. Для полностью ушедших клиентов команда считает потерянную выручку за неоплаченный период. Смена тарифа не входит в churn.</p><span class="metric-owner">Продажи — Амосов; удержание — Скоробогатов · ежемесячно</span></div></div>
-            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Риск оттока и потенциал апсейла</h4><p>Изменение использования робота и диспетчерской относительно предыдущих трех месяцев запускает работу аккаунта.</p><span class="metric-owner">Скоробогатов + аккаунт-менеджер</span></div></div>
-            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Уникальные жители МДО</h4><p>Один профиль жителя в админке независимо от канала — мобильное приложение или MAX. Дубли между каналами не возникают.</p><span class="metric-owner">Методика — Сайдулин; качество данных — Скоробогатов · ежемесячно</span></div></div>
-          </div>
-        </article>
-
-        <article class="panel peach bsc-module reveal" style="--delay: 240ms">
-          <div class="bsc-module-head"><h3>Финансы</h3><span class="bsc-module-index">05</span></div>
+        <article class="panel peach bsc-module reveal" style="--delay: 80ms">
+          <div class="bsc-module-head"><h3>Продукт и экономика</h3><span class="bsc-module-index">02</span></div>
           <div class="bsc-metrics">
             <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>MRR и ARPU</h4><p>Регулярная выручка и средний чек контролируются по действующей базе и тарифам.</p><span class="metric-owner">Амосов; методика — Сайдулин · ежемесячно</span></div></div>
-            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>Регулярная валовая маржа</h4><p>База 2025 подтверждена; показатель переводится из годового среза в квартальный управленческий расчет.</p><span class="metric-owner">Сайдулин + Шильников / Ленский · ежеквартально</span></div></div>
-            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>CAC по каналам и payback</h4><p>Расчетная модель по холоду, агентам и РЦ создана. Для ССП накапливается факт, а окупаемость считается по валовой прибыли, не по выручке.</p><span class="metric-owner">Амосов + Сайдулин · ежеквартально</span></div></div>
-            <div class="bsc-metric"><span class="status-chip building">Внедряется</span><div><h4>Выручка новых направлений</h4><p>Отдельный учет холодных и агентских продаж, РЦ, MAX и AI-робота.</p><span class="metric-owner">Сайдулин + Амосов · ежеквартально</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Валовая маржа</h4><p>Команда анализирует выручку и прямую себестоимость сервиса, чтобы видеть валовую прибыль и изменение маржинальности.</p><span class="metric-owner">Сайдулин + Шильников / Ленский · ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>CAC по каналам и payback</h4><p>Команда сравнивает стоимость привлечения и срок окупаемости холодных, агентских и новых продуктовых направлений.</p><span class="metric-owner">Амосов + Сайдулин · ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Выручка по направлениям</h4><p>Команда ведет раздельный учет выручки основного сервиса, холодных и агентских продаж, РЦ, MAX и AI-робота.</p><span class="metric-owner">Сайдулин + Амосов · ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Уникальные жители МДО</h4><p>Один житель учитывается одним профилем в админке независимо от использования мобильного приложения или MAX. Активность за период анализируется отдельно.</p><span class="metric-owner">Сайдулин + Скоробогатов · ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>Новые продажи и churn rate</h4><p>Команда считает новых клиентов, сумму новых продаж, дополнительные продажи, полный уход клиентов и долю оттока. Смена тарифа не считается churn.</p><span class="metric-owner">Амосов + Скоробогатов · ежемесячно</span></div></div>
+            <div class="bsc-metric"><span class="status-chip">Внедрено</span><div><h4>AI-анализ гипотез рынка</h4><p>Автоматизация анализирует обращения и комментарии отдела продаж, выделяет повторяющиеся запросы клиентов и передает продуктовые гипотезы на проверку.</p><span class="metric-owner">Сайдулин + Амосов · еженедельно</span></div></div>
           </div>
         </article>
       </div>
 
-      <div class="fact-note reveal"><b>«Внедрено»</b> — есть источник, владелец и регулярный управленческий процесс. <b>«Внедряется»</b> — расчет или процесс уже начат, но требуется стабильный ряд факта, окончательная формула либо целевой порог.</div>
+      <div class="fact-note reveal"><b>Статус «Внедрено»</b> означает, что команда уже использует показатель в регулярном управленческом цикле. Целевые пороги и глубина истории могут уточняться без изменения статуса учета.</div>
       <div class="bsc-links reveal" aria-label="Рабочие источники ССП">
         <a class="bsc-link" href="https://docs.google.com/spreadsheets/d/1myDVsg86Z8uXcNFLGdd_CMByUJWog-SQRc37WLdsBf0/edit" target="_blank" rel="noreferrer">Метрики команды</a>
         <a class="bsc-link" href="https://docs.google.com/spreadsheets/d/1eXuPYSERxftlz7CcDAXYeiaycfVbd6nc5InQsXvTRi0/edit" target="_blank" rel="noreferrer">Расчет CAC</a>
@@ -1472,7 +1449,7 @@
         <a class="bsc-link" href="https://docs.google.com/spreadsheets/d/1bXWqqMn_WEX1mROcWW6VJw00v4iohmZCQ22nI9gUI9M/edit" target="_blank" rel="noreferrer">Мегатаблица</a>
         <a class="bsc-link" href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">Стратегическая карта</a>
       </div>
-      <div class="source">Основные источники: <a href="https://docs.google.com/spreadsheets/d/1myDVsg86Z8uXcNFLGdd_CMByUJWog-SQRc37WLdsBf0/edit" target="_blank" rel="noreferrer">ССП и метрики команды</a> · <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта</a>. Статусы отражают фактическую зрелость измерения на 17.07.2026.</div>
+      <div class="source">Основные источники: <a href="https://docs.google.com/spreadsheets/d/1myDVsg86Z8uXcNFLGdd_CMByUJWog-SQRc37WLdsBf0/edit" target="_blank" rel="noreferrer">ССП и метрики команды</a> · <a href="https://docs.google.com/spreadsheets/d/1qy4CZMzQa31AYthSsJ6XrbmoMQpOl781so7EzPdvjuE/edit" target="_blank" rel="noreferrer">стратегическая карта</a>. Статусы актуализированы по управленческому процессу команды 22.07.2026.</div>
     </div>
   </section>
 
@@ -1590,7 +1567,7 @@
         <article class="panel dark reveal" style="--delay: 100ms">
           <h3>Стратегия и исполнение</h3>
           <dl class="answer-list">
-            <div class="answer-row"><dt>Где карта и ССП?</dt><dd>Пять блоков: финансы, клиенты, продукт, процессы и команда; у каждой цели есть метрика, владелец и статус.</dd></div>
+            <div class="answer-row"><dt>Где карта и ССП?</dt><dd>ССП собрана в два рабочих контура: команда и качество исполнения; продукт и экономика. У каждого показателя есть владелец, периодичность и источник.</dd></div>
             <div class="answer-row"><dt>Где дорожная карта?</dt><dd>Она приведена выше; единая контрольная дата РЦ — 10.09.2026.</dd></div>
             <div class="answer-row"><dt>Главный драйвер роста?</dt><dd>Надежный робот — вход в продажу; ГИС — единое окно; РЦ — рост ARPU после проверки соответствия сегменту.</dd></div>
             <div class="answer-row"><dt>РЦ уже готов?</dt><dd>Нет. Платящий клиент МДО вошел в пилот; готовность к промышленной эксплуатации и прямой обмен с ГИС не подтверждены.</dd></div>
